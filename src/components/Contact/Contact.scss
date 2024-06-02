@@ -1,0 +1,152 @@
+.contact {
+  min-height: 80vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #faf9f6;
+  // background-color: #f4f4f4;
+ 
+  // background: var(--contact-main-background);
+  position: relative;
+  margin: 0px;
+}
+
+.contactTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  position: relative;
+}
+
+.contactLeftContainerText {
+  min-height: 30vh;
+  width: 30%;
+  color: black;
+  padding: 20px;
+  background-color: #ca94d8;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  position: relative;
+  font-weight: bold;
+  top: 10%;
+  z-index: 2;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+    border-bottom: 1px solid white;
+  }
+
+  h5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    font-size: var(--p-font-size);
+  }
+}
+
+.contactRightContainerText {
+  width: 60%;
+  padding: 20px;
+  background: var(--contact-right-bg);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: -5%;
+  z-index: 1;
+
+  h1 {
+    color: var(--contact-right-heading-color);
+    font-size: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 10%;
+
+    input,
+    textarea {
+      font-size: var(--p-font-size);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+      min-height: 150px;
+    }
+
+    button {
+      padding: 10px 30px;
+      border-radius: 5px;
+      background-color: var(--contact-button-bg);
+      color: var(--contact-button-color);
+      font-size: var(--contact-button-font-size);
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: var(--contact-button-hover-bg);
+      }
+    }
+  }
+}
+
+.noteBox::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+}
+.noteBox::-webkit-scrollbar-thumb {
+  background-color: rgb(163, 165, 167); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+  .contactForm{
+    width: 350px;
+    // height: 950px;
+  }
+
+  .contactTextContainer {
+    flex-direction: column;
+    gap: 2rem;
+
+    .contactLeftContainerText,
+    .contactRightContainerText {
+      width: 100%;
+      position: relative;
+      top: 0;
+      text-align: center;
+    }
+
+    .contactRightContainerText {
+      margin-left: 0;
+
+      form {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+// libre Baskerville

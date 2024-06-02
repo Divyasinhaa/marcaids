@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  
+}
+.App {
+  overflow: hidden;
+  margin: 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .about{
+    margin-top: 120px !important;
+    z-index: 20;
+  }
+}
+
+:root {
+  --title-color: teal;
+  --tagline-color: black; // About or WhyUs ke liye
+  --paragraph-color: rgb(49, 49, 49);
+  --h1-font-size: 1.25rem; // h1 = Title i.e. WhyUs/About title
+  --h2-font-size: 1.75rem; // h2 = Tagline
+  --p-font-size: 1rem; // p = paragraph content
+  --font-family: sans-serif;
+
+  // Card Variable below (services section)
+  --card-border-radius: 1rem;
+--card-transition-duration: 0.4s;
+--figure-hover-bg-color: #0009;
+--figcaption-font-size: 2.3rem;
+--figcaption-font-weight: bold;
+--figcaption-color: #000;
+--image-hover-scale: 1.2;
+--initial-clip: 100%;
+
+
+// About Variables below
+// Title, Tagline, Color, Fonts in :root Variables 
+  --about-main-background: rgb(228, 228, 227);
+
+  // WhyUs Variables below
+   // Title, Tagline, Color, Fonts in :root Variables 
+   --whyus-main-background: white;
+  
+
+  // Services Variables below
+  --services-main-background: #161616;
+  --services-title-color: #3bdddd;
+  --services-tagline-color: white;
+  --services-paragraph-color: rgb(158, 158, 158);
+  --services-text-shadow-color: rgba(0, 0, 0, .5);
+  --services-grid-item-background: #f4f0f0;
+  --services-box-shadow-color: rgba(0, 0, 0, 0.1);
+  --services-box-shadow-hover-color: rgba(0, 0, 0, 0.05);
+  --services-hover-translate-y: -10px;
+
+  // Testimonials Variables below
+--testimonials-background-color: rgb(228, 228, 227);
+--testimonials-gridbg-color: rgb(237, 237, 237);
+--testimonials-box-shadow-color: rgba(0, 0, 0, 0.1);
+--testimonials-name-color: teal;
+--testimonials-designation-color: darkgrey;
+
+  //Contact Variable below
+--contact-main-background: #025252;
+--contact-left-bg: #013131;
+--contact-left-text-color: white;
+--contact-left-heading-color: #ffd700;
+--contact-right-bg: white;
+--contact-right-heading-color: #025252;
+--contact-button-bg: #ffd700;
+--contact-button-color: #000;
+--contact-button-hover-bg: #ffb700;
+--contact-button-font-size: 1.2rem;
+
+// Navbar Variables below
+--navbar-bg-color: #181818;
+--link-color: whitesmoke;
+--link-hover-color: #ffd700;
+}

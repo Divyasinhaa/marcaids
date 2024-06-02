@@ -1,0 +1,62 @@
+// About.scss
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 0px 20px;
+  font-family: var(--font-family);
+  gap : 30px;
+  height: 65vh;
+  margin-top: 35px;
+}
+
+.aboutTextContainer {
+  max-width: 50%; /* Adjust the width as needed */
+  padding: 20px;
+  text-align: left;
+}
+
+.aboutTitle {
+  font-size: 2.5rem; /* Larger font size for the title */
+  font-family: var(--font-family);
+  text-align: left;
+}
+
+.aboutImageContainer {
+  max-width: 50%; /* Adjust the width as needed */
+}
+
+.aboutImageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+p{
+  text-align: left;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column; /* Stack items on smaller screens */
+    text-align: center;
+  }
+
+  .aboutTextContainer,
+  .aboutImageContainer {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .about{
+    padding: 0px;
+    margin: 0px;
+  }
+  .aboutTitle{
+    text-align: center !important;
+  }
+  
+}

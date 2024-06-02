@@ -1,0 +1,43 @@
+.mainBody {
+  height: 130vh;
+  width: 100%;
+  margin: 20px 0px 0px 0px;
+  border: 1px solid #2c1a46;
+  border-radius: 2rem;
+}
+.firstBox {
+  display: flex;
+  justify-content: space-between;
+}
+.secondBox {
+  display: flex;
+  justify-content: space-between;
+}
+.ourServices h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2c1a46;
+  font-size: 2rem;
+  font-family: var(--font-family);
+  margin-top: 4rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+  .mainBody{
+    height: 45vh;
+    width: 94%;
+    margin: 10px 10px 15px 10px;
+  }
+  .firstBox img{
+    height: 100px;
+    width: 100px;
+  }
+ 
+  .secondBox img{
+    height: 100px;
+    width: 100px;
+  }
+ 
+}
