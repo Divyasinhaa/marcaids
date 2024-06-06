@@ -13,6 +13,7 @@ import OurProducts from "./components/OurProducts/OurProducts.js";
 import { Application } from '@splinetool/runtime';
 import {BrowserRouter, Routes,Route} from "react-router-dom";
 import LandinPage from "./components/LandingPage/LandingPage.js";
+import TermsNCond from "./components/tnc/tnc.js";
 
 const Section = ({ id, children }) => (
   <section id={id} className="section">
@@ -26,6 +27,7 @@ function App() {
      {/* <BrowserRouter> */}
      <Routes>
       <Route path="/" element={<LandinPage/>}/>
+      <Route path="/tnc" element={<TermsNCond/>}/>
      </Routes>
      {/* </BrowserRouter> */}
 

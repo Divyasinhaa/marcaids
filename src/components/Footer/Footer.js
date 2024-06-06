@@ -59,6 +59,7 @@
 
 import React from "react";
 import LogoMain from "../../assets/logoo_main.png";
+import { Link } from "react-router-dom";
 import {
   MDBFooter,
   MDBContainer,
@@ -69,7 +70,7 @@ import {
 import './Footer.scss'
 const Footer = () => {
   return (
-    <div style={{ backgroundColor: "#1a1a1a", position: "relative" }} className="footer_div">
+    <div style={{ backgroundColor: "black", position: "relative" }} className="footer_div">
       <MDBFooter
         className="text-center text-lg-start text-muted"
         color="white"
@@ -161,8 +162,8 @@ const Footer = () => {
                   </a>
                   </p>
                   <p>
-                  <div href="t&c.html" className="text-white">
-                    Our Terms and Conditions
+                  <div className="text-white" >
+                    <Link to="/tnc" style={{ color: "white" }}>Our Terms and Conditions</Link>
                   </div>
                   </p>
               </MDBCol>
