@@ -4,11 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0px 0px 20px;
+  padding: 50px 35px 20px 35px;
   font-family: var(--font-family);
   gap : 30px;
   height: 65vh;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .aboutTextContainer {
@@ -24,12 +24,21 @@
 }
 
 .aboutImageContainer {
+  //max-height: 100px;
+  padding: 20px;
   max-width: 50%; /* Adjust the width as needed */
 }
 
 .aboutImageContainer img {
   max-width: 100%;
   height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 p{
   text-align: left;

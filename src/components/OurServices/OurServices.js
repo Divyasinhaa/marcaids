@@ -15,7 +15,8 @@ const OurServices = () => {
                     <h1> OUR SERVICES</h1>
                 </div>
                 <div className='firstBox'>
-                    <div><img src={first}  alt='' /></div>
+                    <div><img src={`localhost:3000/&{first}`}  alt='' /></div>
+                    <div><img src={first} alt='' /></div>
                     <div><img src={second} alt='' /></div>
                     <div><img src={third} alt='' /></div>
                 </div>

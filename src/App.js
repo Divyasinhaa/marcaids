@@ -11,7 +11,8 @@ import Footer from "./components/Footer/Footer";
 import OurServices from "./components/OurServices/OurServices.js"
 import OurProducts from "./components/OurProducts/OurProducts.js";
 import { Application } from '@splinetool/runtime';
-
+import {BrowserRouter, Routes,Route} from "react-router-dom";
+import LandinPage from "./components/LandingPage/LandingPage.js";
 
 const Section = ({ id, children }) => (
   <section id={id} className="section">
@@ -22,29 +23,14 @@ const Section = ({ id, children }) => (
 function App() {
   return (
     <div className="App" style={{overflowY:"auto"}}> 
-      <Navbar />
-      <Section id="home">
-        <Home />
-      </Section>
-      <Section id="about">
-        <About />
-      </Section>
-      <Section id="whyus">
-        <WhyUs />
-      </Section>
-      <Section id="testimonials">
-        <Testimonials />
-      </Section>
-      <Section id="our-Services">
-        <OurServices />
-      </Section>
-      <Section id="our-Products">
-        <OurProducts />
-      </Section>
-      <Section id="contact">
-        <Contact />
-      </Section>
-      <Footer />
+     {/* <BrowserRouter> */}
+     <Routes>
+      <Route path="/" element={<LandinPage/>}/>
+     </Routes>
+     {/* </BrowserRouter> */}
+
+      
+      
     </div>
   );
 }

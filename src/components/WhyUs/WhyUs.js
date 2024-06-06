@@ -11,11 +11,11 @@ const WhyUs = () => (
       
     </div>
   <div className="whyusImageContainer">
-   <img src={whyUsImage} alt="Why Us" style={{height:"500px"}} />
+   <img src={whyUsImage} alt="Why Us" style={{height:"500px",boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',transition: 'transform 0.3s ease, box-shadow 0.3s ease',borderRadius: '10px'}} />
   </div>
     <div className="whyusTextContainer">
      
-      <h3 style={{ color: "#2c1a46",marginRight:"auto"}} className="whyusHeading">
+      <h3 style={{ color: "#2c1a46",marginRight:"auto",fontSize: 'xxx-large',fontWeight: '300'}} className="whyusHeading">
       Why Us?
     </h3>
     

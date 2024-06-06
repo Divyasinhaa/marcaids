@@ -159,7 +159,12 @@ const Footer = () => {
                   <a href="#clients" className="text-white">
                     Our Clients
                   </a>
-                </p>
+                  </p>
+                  <p>
+                  <div href="t&c.html" className="text-white">
+                    Our Terms and Conditions
+                  </div>
+                  </p>
               </MDBCol>
 
               <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4 footer_column">
