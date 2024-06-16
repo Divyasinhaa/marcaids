@@ -75,7 +75,11 @@
       }
     }
   }
-
+  @media screen and (max-width: 375px){
+    .testimonials{
+      height: 480vh !important;
+    }
+  }
   @media screen and (max-width: 480px) {
 
    .testimonials{

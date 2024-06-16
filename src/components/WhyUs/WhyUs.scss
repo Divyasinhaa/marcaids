@@ -99,6 +99,13 @@ p {
     align-items: center;
     text-align: center;
   }
+
+}
+@media screen and (max-width: 375px) {
+  .whyusTextContainer{
+    margin-top: 20%;
+  }
+  
 }
 
 @media screen and (max-width: 480px) {
