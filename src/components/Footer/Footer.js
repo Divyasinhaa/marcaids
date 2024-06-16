@@ -58,7 +58,7 @@
 // export default Footer;
 
 import React from "react";
-import LogoMain from "../../assets/logoo_main.png";
+import logoo_main_footer from "../../assets/logoo_main_footer.png";
 import { Link } from "react-router-dom";
 import {
   MDBFooter,
@@ -92,7 +92,7 @@ const Footer = () => {
               >
                 <h5 className="text-uppercase fw-bold mb-4">
                   {/* <MDBIcon color='white' className='me-3' /> */}
-                  <img src={LogoMain} alt="" width="200" height="150" />
+                  <img src={logoo_main_footer} alt="" width="200" height="150" />
                   {/* Marcaids */}
                 </h5>
                 <p className="text-white">
