@@ -1,0 +1,43 @@
+.body{
+    background-color: #787280;
+}
+.container{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    background-color: #cec6d8;
+
+
+h1{
+    
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-style: italic;
+    color:#71529c;
+}
+h2{
+    text-decoration: underline;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-style: italic;
+    color:#16062c;
+    
+}
+
+p{
+    margin-bottom: 15px;
+}
+ul{
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+}

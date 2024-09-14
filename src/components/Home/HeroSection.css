@@ -1,0 +1,124 @@
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  .hero-content .container{
+    background: transparent !important;
+  }
+  .hero-content .row{
+    background: transparent !important;    
+  }
+  .hero-content h1{
+    font-size: 8rem !important;
+    font-family:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" !important;
+    font-style: normal !important;
+    color: white !important;
+    text-align: end !important;
+  }
+  .hero-content h2{
+    font-size: 3rem !important;
+    font-family:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" !important;
+    color: white !important;
+    text-align: end !important;
+    font-style: normal !important;
+    text-decoration: none !important;
+    padding-top:25px ;
+  }
+  .hero-content p{
+    padding-top: 25px;
+    font-family:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" !important;
+    font-size: 2rem !important;
+    text-align: start !important;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .navbar-logo img {
+    height: 50px; /* Adjust as needed */
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white; /* Adjust as needed */
+    font-weight: bold;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem; /* Adjust as needed */
+    font-family: "Times New Roman", serif; /* Adjust as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content h1 span {
+    display: inline-block;
+    font-size: 3rem; /* Adjust as needed */
+    transform: rotate(-10deg);
+    font-family: "Arial", sans-serif; /* Adjust as needed */
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem; /* Adjust as needed */
+    font-family: "Arial", sans-serif; /* Adjust as needed */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 3rem; /* Adjust as needed */
+    }
+  
+    .hero-content h1 span {
+      font-size: 2.5rem; /* Adjust as needed */
+    }
+  
+    .hero-content p {
+      font-size: 1.2rem; /* Adjust as needed */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 2.5rem; /* Adjust as needed */
+    }
+  
+    .hero-content h1 span {
+      font-size: 2rem; /* Adjust as needed */
+    }
+  
+    .hero-content p {
+      font-size: 1rem; /* Adjust as needed */
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

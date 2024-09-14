@@ -1,39 +1,31 @@
 import React from "react";
 import "./App.scss";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import WhyUs from "./components/WhyUs/WhyUs.js";
-import Testimonials from "./components/Testimonials/Testimonials";
-// import Service from "./components/Service/Service";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
-import OurServices from "./components/OurServices/OurServices.js"
-import OurProducts from "./components/OurProducts/OurProducts.js";
-import { Application } from '@splinetool/runtime';
 import {BrowserRouter, Routes,Route} from "react-router-dom";
-import LandinPage from "./components/LandingPage/LandingPage.js";
+import Home from "./components/Home/Home.js";
+import AboutUs from "./components/AboutUs/AboutUs.js";
+import ContactPage from "./components/OurServices/ContactPage.js";
+import TestimonialsFirst from "./components/Testimonials/TestimonialsFirst.js";
+import ContactUs from "./components/ContactUs/ContactUs.js";
 import TermsNCond from "./components/tnc/tnc.js";
-
-const Section = ({ id, children }) => (
-  <section id={id} className="section">
-    {children}
-  </section>
-);
+import Blogpage from "./components/Blog/Gallery.js"
 
 function App() {
   return (
-    <div className="App" style={{overflowY:"auto"}}> 
+    <>
      {/* <BrowserRouter> */}
+     
      <Routes>
-      <Route path="/" element={<LandinPage/>}/>
+     <Route path="/" element={<Home/>}/>
+     
+     <Route path="/about" element={<AboutUs/>}/>
+     <Route path="/blog" element={<Blogpage/>}/>
+      <Route path="/services" element={<ContactPage/>}/>   
+      <Route path="/testimonials" element={<TestimonialsFirst/>}/>
+      <Route path="/contact" element={<ContactUs/>}/>
       <Route path="/tnc" element={<TermsNCond/>}/>
      </Routes>
      {/* </BrowserRouter> */}
-
-      
-      
-    </div>
+     </>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./tnc.scss";
+import "./tnc.css";
 function TermsNCond() {
   return (
     <>

@@ -1,43 +1,76 @@
-.mainBody {
-  height: 130vh;
-  width: 100%;
-  margin: 20px 0px 0px 0px;
-  border: 1px solid #2c1a46;
-  border-radius: 2rem;
+.body{
+  height: 700px;
+  background-color: #e9e6e6 !important;
 }
-.firstBox {
-  display: flex;
-  justify-content: space-between;
-}
-.secondBox {
-  display: flex;
-  justify-content: space-between;
-}
-.ourServices h1 {
+.heading{
+  font-size: 4em;
+  background-color: #e9e6e6;
+  font-weight: 400;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: #2c1a46;
-  font-size: 2rem;
-  font-family: var(--font-family);
-  margin-top: 4rem;
-  font-weight: 700;
+  padding: 40px;
+  flex-wrap: wrap;
+  text-decoration: underline;
 }
+.mainBody{
+        background-color: #e9e6e6;
+        padding: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .service-card {
+        background-color: #e9e6e6;
+        border-radius: 10px;
+        padding: 20px;
+        width: 680px;
+        /* border-width: 10px; */
+        border: 2px solid #7a7979;
+        /* border-color: #402925; */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(to bottom right, #f8f9fa, #7a7979);
+        text-align: left;
+      }
+      .custom-carousel {
+        position: relative; /* Ensure the carousel's position is relative */
+        overflow: hidden; /* Hide overflow to prevent shifts */
+      }
+      .service-card::before
+      {
+        content:'';
+        position:absolute;   
+        top:-2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;;
+        background-color: #e9e6e6;
+        z-index: -1;
+      }
+      .service-card::after
+      {
+        content:'';
+        position:absolute;
+        top:-2px;
+        left: -2px;
+        bottom: -2px;;
+        background-color: #7a7979;
+        z-index: -2;
+        filter: blur(40px);
+      }
+      .service-card::before,
+      .service-card::after
+      {
+      background: linear-gradient(235deg,#fff,#7a7979,#424242);
+      }
+      .carousel-control-next {
+        right: -200px !important;
+    }
 
-@media screen and (max-width: 480px) {
-  .mainBody{
-    height: 45vh;
-    width: 94%;
-    margin: 10px 10px 15px 10px;
-  }
-  .firstBox img{
-    height: 100px;
-    width: 100px;
-  }
- 
-  .secondBox img{
-    height: 100px;
-    width: 100px;
-  }
- 
-}
+    .d-flex{
+      background: #343434DE;
+
+    }
+   
+
