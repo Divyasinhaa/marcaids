@@ -1,73 +1,33 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from './CarouselComponent.module.css';
 import Navbar from "../Navbar";
 import CircularCarousel from "./CircularCarousel";
 import Product1 from '../../assets/photobackgroung.png';
-import branding2 from "../../assets/branding2.png";
-import contentcreation from "../../assets/contentcreation.jpg";
-import socialmediamanagement from "../../assets/socialmediamanagement.png";
-import webanddevelopment from "../../assets/webanddevelopment.png";
-import marketing2 from '../../assets/marketing2.jpg';
 
 
 const CarouselComponent = () => {
-    const sequence = [0, 4, 3, 2, 1];
-    const [rotation, setRotation] = useState(0);
-    const [topImageIndex, setTopImageIndex] = useState(0);
-
-    const images = [   socialmediamanagement, branding2 ,marketing2,contentcreation,webanddevelopment ];
-    const texts = ["PERFORMANCE MARKETING","WEB DESIGN-DEVELOPMENT","BRANDING","SOCIAL MEDIA-MANAGEMENT","CONTENT-CREATION"];
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setRotation((prevRotation) => prevRotation - 72); // 360 degrees / 5 images = 72 degrees
-
-            setTopImageIndex((prevIndex) => {
-                const currentIndex = sequence.indexOf(prevIndex);
-                const nextIndex = (currentIndex + 1) % sequence.length;
-                return sequence[nextIndex];
-            });
-        }, 4000);
-
-        return () => clearInterval(interval);
-    }, []);
-
     return (
         <div className={styles.container}>
             <Navbar />
             <div
                 className={styles.background}
-                style={{ backgroundImage: `url(${Product1})` }}
+                style={{ backgroundImage: `url(${Product1})` }}  // Fixed the use of template literals here
             ></div>
-            <div className={styles.carouselWrapper}>
-                <div
-                    className={styles.carousel}
-                    style={{ transform: `rotate(${rotation}deg)` }}
-                >
-                    {images.map((image, index) => (
-                        <div
-                            key={index}
-                            className={`${styles.circle} ${styles.smallCircle} ${styles[`pos${index}`]} ${
-                                index === sequence[(sequence.indexOf(topImageIndex) + 1) % sequence.length]
-                                    ? styles.enlargeAnimation
-                                    : ''
-                            }`}
-                        >
-                            <img src={image} alt={`small ${index}`} />
-                        </div>
-                    ))}
-                    <div className={`${styles.circle} ${styles.largeCircle}`}></div>
+
+            {/* Main Content Section */}
+            <div className="relative h-screen w-full flex items-center justify-end lg:justify-end sm:justify-center bg-cover bg-center">
+                {/* Transparent Circle in Background */}
+                <div className="absolute w-[1500px] h-[1500px] bg-[#8B705D] opacity-20 rounded-full lg:-top-80 sm:-top-40 lg:left-2/3 sm:left-1/2"></div>
+
+                {/* Main Content */}
+                <div className="relative lg:text-right z-10 lg:pr-20 mb-65 mr-20 lg:mr-0">
+                    <h1 className="lg:text-[70px] sm:text-4xl text-5xl font-semibold text-black lg:mb-4 " style={{ fontFamily: "'Inria Serif', serif" }}>MARCAIDS</h1>
+                    <h2 className="lg:text-5xl sm:text-3xl text-4xl font-semibold text-black mr-14" style={{ fontFamily: "'Inria Serif', serif" }}>STUDIOS</h2>
                 </div>
             </div>
-            <CircularCarousel/>
-            {/* <div className={`${styles.circle} ${styles.quarterCircle}`}></div> */}
-            <div className={styles.textWrapper}>
-                {texts.map((text, index) => (
-                    <div key={index} className={`${styles.text} ${index === topImageIndex ? styles.activeText : ''}`}>
-                        {text}
-                    </div>
-                ))}
-            </div>
+
+            {/* Circular Carousel Component */}
+            <CircularCarousel />
         </div>
     );
 };

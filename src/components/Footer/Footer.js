@@ -64,7 +64,7 @@ const Footer = () => {
               </MDBCol>
 
               <MDBCol md="3" lg="3" xl="3" className="mx-auto mb-4 footer_column">
-                <h5 className="text-white fw-bold mb-4 footer_heading" style={{ fontSize: "1.6rem" }}>
+                <h5 className="text-white fw-bold mb-4  footer_heading" style={{ fontSize: "1.6rem" }}>
                   Our Location
                 </h5>
                 <p className="text-white">Suncity C-35, Haryana</p>
@@ -83,22 +83,22 @@ const Footer = () => {
                   Quick links
                 </h5>
                 <p>
-                  <a href="#navbar" className="text-white">
+                  <a href="/" className="text-white">
                     Home
                   </a>
                 </p>
                 <p>
-                  <a href="#about" className="text-white">
+                  <a href="/about" className="text-white">
                     About Us
                   </a>
                 </p>
                 <p>
-                  <a href="#services" className="text-white">
+                  <a href="/services" className="text-white">
                     Our Services
                   </a>
                 </p>
                 <p>
-                  <a href="#clients" className="text-white">
+                  <a href="/services" className="text-white">
                     Our Clients
                   </a>
                   </p>
@@ -128,7 +128,7 @@ const Footer = () => {
                   </p>
                 </p>
                 <p className="schedule">
-                  <a href="#contact" style={{ color: "white", fontSize: "0.9rem"}}>
+                  <a href="/contact" style={{ color: "white", fontSize: "0.9rem"}}>
                     SCHEDULE A MEETING
                   </a>
                 </p>

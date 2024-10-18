@@ -9,6 +9,8 @@ import ContactUs from "./components/ContactUs/ContactUs.js";
 import TermsNCond from "./components/tnc/tnc.js";
 import Blogpage from "./components/Blog/Gallery.js"
 
+
+
 function App() {
   return (
     <>

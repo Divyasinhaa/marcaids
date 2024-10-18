@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+
 .container {
     position: relative;
     height: 900px;
@@ -50,13 +53,20 @@
     height: 1050px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(15deg) !important; /* Adjust rotation */
-    background-color: #8B705D !important;
+    transform: translate(-50%, -50%) rotate(15deg) !important; 
+   
 }
 
+
+
+
+
+
+
+
 .smallCircle {
-    width: 575px;
-    height: 575px;
+    width: 600px;
+    height: 600px;
     z-index: 2;
     transform-origin: center; 
     transition: transform 1s ease-in-out; 
@@ -72,6 +82,8 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(40deg) translate(0, -600px) rotate(-40deg);
     box-shadow:  5px 5px 5px black !important;
+    text-align:center;
+
 }
 
 .pos1 {
@@ -127,7 +139,7 @@ img {
     display: flex;
     white-space: nowrap; 
     text-align: center;
-    gap: 15px;
+    gap: 40px;
 }
 
 .text {

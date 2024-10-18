@@ -1,171 +1,140 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./ContactPage.css";
-import logoo_main from "../../assets/logoo_main.png";
 import OurServices from "./OurServices";
 import CarouselComponent from "./CarouselComponent";
 import Footer from "../Footer/Footer";
+import FAQ from "./FAQ";
 
+const ContactPage = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    service: "",
+    message: "",
+  });
 
-
-
- const ContactPage = () => {
-
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
   return (
-     
     <>
-    <CarouselComponent/>
-   <OurServices/>
-    <div className="contact-page container-fluid">
-      <nav class="navbar" style={{boxShadow: 'none' ,maxWidth:'1200px'}}>
-  <div class="container-n" >
-    <ul className="navbar-nav d-flex flex-row ms-auto">
-          <li className="nav-item nav-item-custom ms-5">
-            <a className="nav-link active" aria-current="page" href="#">PROJECTS</a>
-          </li>       
-          <li className="nav-item nav-item-custom ms-5">
-            <a className="nav-link active" aria-current="page" href="#">CONTACT</a>
-          </li>
-        </ul>
-  </div>
-  
-</nav>
-      <div className="row justify-content-center">
-        <div className="col-md-4 contact-info">
-          <h2 className="text-center">CONTACT</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <div className="contact-details">
-            <p>
-              <h6>Address</h6> Khmelnytskyi, Beregova str., 44
-            </p>
-            <p>
-              <h6>Phone</h6> +380 (99) 111-22-33
-            </p>
-            <p>
-              <h6>E-mail</h6> tyra@gmail.com
-            </p>
-          </div>
+      <CarouselComponent />
+      <OurServices />
+      <FAQ />
+      <div className="bg-[#DACBC1] p-4 sm:p-6 md:p-10">
+        {/* Top Links */}
+        <div className="flex justify-center md:justify-end space-x-3 sm:space-x-6 md:space-x-10 mt-6 md:mt-10">
+          <h3>
+            <a href="/blog" className="text-black font-semibold no-underline hover:underline">
+              PROJECTS
+            </a>
+          </h3>
+          <h3>
+            <a href="/contact" className="text-black font-semibold no-underline hover:underline">
+              CONTACT
+            </a>
+          </h3>
         </div>
-        <div className="col-md-4 contact-form">
-          <h2 className="text-center">CONTACT FORM</h2>
 
+        {/* Contact Section */}
+        <div className="flex flex-col md:flex-row items-start justify-center gap-6 sm:gap-8 md:gap-10 mt-8 md:mt-10">
+          {/* Contact Info */}
+          <div className="flex-1 text-center md:text-left p-4 sm:p-5 md:p-5">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-5" style={{ fontFamily: "'Inria Serif', serif" }}>CONTACT</h2>
+            <div className="text-base sm:text-lg md:text-xl space-y-2 sm:space-y-3">
+              <p>Address: Delhi Gurugram</p>
+              <p>Phone: +91 8580440313 / +91 8816062696</p>
+              <p>Email: shikhu@marcaids.com</p>
+            </div>
+          </div>
 
-          <form action="https://formspree.io/f/xpwawaod"
+          {/* Contact Form */}
+          <form
+            action="https://formspree.io/f/xyzgroar"
             method="POST"
-            className="contact-inputs">
+            className="flex-1 bg-[#A78770] bg-opacity-40 p-4 sm:p-6 md:p-8 rounded-md shadow-lg max-w-md w-full mx-auto md:mx-0"
+          >
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 sm:mb-5" style={{ fontFamily: "'Inria Serif', serif" }}>CONTACT FORM</h2>
 
-            <div className="form-group">
+            <div className="mb-3 sm:mb-4">
+              <label className="block font-semibold mb-1 sm:mb-2">Your Name</label>
               <input
                 type="text"
-                className="form-control"
-                id="name"
                 name="name"
-                autoComplete="off"
+                value={formData.name}
+                onChange={handleChange}
                 required
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded focus:outline-none focus:border-black"
               />
-              <span></span>
-              <label htmlFor="name">Your name</label>
             </div>
 
-            <div className="form-group">
+            <div className="mb-3 sm:mb-4">
+              <label className="block font-semibold mb-1 sm:mb-2">Your Phone</label>
               <input
-                type="tel"
-                className="form-control"
-                id="phone"
+                type="text"
                 name="phone"
-                autoComplete="off"
+                value={formData.phone}
+                onChange={handleChange}
                 required
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded focus:outline-none focus:border-black"
               />
-              <span></span>
-              <label htmlFor="phone">Your phone</label>
             </div>
 
-            <div className="form-group">
+            <div className="mb-3 sm:mb-4">
+              <label className="block font-semibold mb-1 sm:mb-2">Your Email</label>
               <input
                 type="email"
-                className="form-control"
-                id="email"
                 name="email"
-                autoComplete="off"
+                value={formData.email}
+                onChange={handleChange}
                 required
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded focus:outline-none focus:border-black"
               />
-              <span></span>
-              <label htmlFor="email">Your email</label>
             </div>
 
-            <div className="btnCont">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                autoComplete="off"
+            <div className="mb-3 sm:mb-4">
+              <label className="block font-semibold mb-1 sm:mb-2">Select Your Service</label>
+              <select
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
                 required
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded focus:outline-none focus:border-black"
               >
-                Select your service
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a class="dropdown-item" >
-                    Performance Marketing
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" >
-                    Web Design and Development
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" >
-                    Branding
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" >
-                    Social Media Management
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" >
-                    Content Creator
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" >
-                    Consultant
-                  </a>
-                </li>
-              </ul>
+                <option value="">Choose a service</option>
+                <option value="Web Design">Web Design</option>
+                <option value="SEO">SEO</option>
+                <option value="Marketing">Marketing</option>
+              </select>
             </div>
 
-            <div className="form-group">
+            <div className="mb-3 sm:mb-4">
+              <label className="block font-semibold mb-1 sm:mb-2">Message</label>
               <textarea
-                className="form-control custom-textarea"
-                id="message"
                 name="message"
-                autoComplete="off"
+                value={formData.message}
+                onChange={handleChange}
                 required
+                rows="4"
+                className="w-full p-2 sm:p-3 border border-gray-300 rounded focus:outline-none focus:border-black resize-none"
               />
-              <span></span>
-              <label htmlFor="message">Message</label>
             </div>
-            <div className="btnCont">
-              <button type="submit" class="btn btn-dark" value="send" >
+
+            <div className="text-center">
+              <button
+                type="submit"
+                className="bg-black text-white font-semibold py-2 px-4 sm:px-6 rounded hover:bg-opacity-80 transition"
+              >
                 Send Message
               </button>
             </div>
           </form>
         </div>
       </div>
-    </div>
-    <Footer/>
+      <Footer />
     </>
   );
 };

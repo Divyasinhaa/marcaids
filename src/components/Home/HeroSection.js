@@ -1,40 +1,142 @@
-import React from "react";
-import "./HeroSection.css";
+import React, { useState, useEffect } from "react";
 import bghome from "../../assets/bg-home.jpeg";
-import Navbar from '../Navbar';
+import Navbar from "../Navbar";
+import ConcentricCircle from "./ConcentricCircle";
+import "./HeroSection.css";
 
 const HeroSection = () => {
-  
+  const [isOpen, setIsOpen] = useState(false); // Controls HeroSection opening
+  const [showTextLayer, setShowTextLayer] = useState(false); // Controls text layer visibility
+  const [showConcentricCircle, setShowConcentricCircle] = useState(false); // Controls ConcentricCircle visibility
+  const [isClickable, setIsClickable] = useState(true); // Controls HeroSection clickability
+
+  // Handle clicks on the HeroSection background
+  const handleClick = () => {
+    if (!isClickable) return; // Prevent multiple clicks
+
+    if (!isOpen) {
+      // Open HeroSection and show text layer
+      setIsOpen(true);
+      setIsClickable(false); // Disable further clicks
+    }
+  };
+
+  // Show ConcentricCircle and hide HeroSection on text layer click
+  const handleTextLayerClick = () => {
+    setShowConcentricCircle(true); // Show ConcentricCircle
+    setIsOpen(false); // Hide HeroSection
+    setShowTextLayer(false); // Hide TextLayer
+  };
+
+  // Reset everything to the initial state
+  const handleClickCentre = () => {
+    // Reset everything
+    setIsOpen(false); // Close HeroSection
+    setShowTextLayer(false); // Hide TextLayer
+    setShowConcentricCircle(false); // Hide ConcentricCircle
+    setIsClickable(true); // Make HeroSection clickable again
+  };
+
+  // Automatically show the text layer after HeroSection opens
+  useEffect(() => {
+    if (isOpen) {
+      const timer = setTimeout(() => {
+        setShowTextLayer(true);
+      }, 500); // Show TextLayer with a delay
+
+      return () => clearTimeout(timer); // Cleanup on unmount
+    }
+  }, [isOpen]);
+
   return (
     <>
-    
-    <div className="hero-section" style={{ backgroundImage: `url(${bghome})` }}>
-      <Navbar/>
-      <div className="hero-content">
-          <div class="container">
-             <div class="row">
-                <div class="col-md-7" >
-                <h1>Building</h1>
+      {!showConcentricCircle && ( // Show HeroSection if ConcentricCircle is not visible
+        <div className="App" style={{background: "#C8C4B9"
+        }}>
+          
+          
+          <div
+            className={`HS ${isOpen ? "open" : ""}`} // Apply class based on isOpen state
+            style={{
+              backgroundImage: `url(${bghome})`,
+              
+            }} // HeroSection background
+            onClick={handleClick} // Click handler for HeroSection
+          >
+           <Navbar/>
+           
+            
+            <div className="hero-content">
+            
+              <div className={`hero-sec ${isOpen ? "slide-out" : ""}`}>
+              
+                <div className="container">
+                  <div className="row">
+                  
+                    <div className="col-md-7">
+                      <h1 style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}>Building</h1>
+                    </div>
+                    <div className="col-md-4">
+                      <p style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}>Let's build your identity and your brand</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-4">
-                <p>Let's build your identity and your brand</p>
+
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-5">
+                      <h2 style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}>your</h2>
+                    </div>
+                    <div className="col-md-5">
+                      <h1 style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}>Business</h1>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
 
-          <div class="container">
-             <div class="row">
-                <div class="col-md-5">
-                <h2>your</h2>
-                </div>
-                <div class="col-md-5">
-                <h1>Business</h1>
-                </div>
+          {showTextLayer && (
+            <div
+              className="text-layer-1 flex flex-col items-center space-y-0 p-0 w-full  " 
+              onClick={handleTextLayerClick} // Click handler to show ConcentricCircle
+            >
+              <span
+        className="lg:text-[120px] text-[90px] text-white leading-tight"
+        style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}
+      >
+        We Build
+      </span>
+      <span
+        className="lg:text-[120px] text-[70px]  text-black leading-tight lg:mr-80"
+        style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}
+      >
+        your brand
+      </span>
+      <span
+        className="lg:text-[88px] text-[70px]  text-white leading-tight lg:mr-10"
+        style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}
+      >
+        with passion
+      </span>
+      <span
+        className="lg:text-[88px] text-[70px] text-white leading-tight lg:ml-80"
+        style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}
+      >
+        embodying
+      </span>
+      <span
+        className="lg:text-[88px] text-[70px]  text-white leading-tight lg:mr-60"
+        style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}
+      >
+        perfection
+      </span>
             </div>
-          </div>
-      
-      </div>
-    </div>
+          )}
+        </div>
+      )}
+
+      {showConcentricCircle && <ConcentricCircle onClick={handleClickCentre} />} {/* Show ConcentricCircle */}
     </>
   );
 };

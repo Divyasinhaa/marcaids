@@ -1,4 +1,3 @@
-/* Extend background to cover the full width of the screen */
 .concentric-circle-container {
   position: relative;
   width: 100%; /* Full width of the viewport */
@@ -50,7 +49,7 @@
 
 .outer-text {
   fill: #88766c; /* Default color */
-  font-size: 1.6vw; /* Larger text size */
+  font-size: 1.5vw; /* Larger text size */
   animation: rotate-inner 20s linear infinite; /* Rotate animation */
   /* word-spacing: 0.2px; */
 }
@@ -63,4 +62,27 @@
   100% {
     transform: rotate(360deg); /* Counterclockwise rotation */
   }
+}
+
+@media (max-width: 480px) {
+  .outer-text{
+    fill: #88766c; /* Default color */
+  font-size: 4vw; /* Larger text size */
+  animation: rotate-inner 20s linear infinite; /* Rotate animation */
+  /* word-spacing: 0.2px; */
+  }
+
+.inner-text {
+  fill: #4f3c31; /* Change color to brown */
+  font-size: 0.5rem; /* Font size set to 2.5rem */
+  animation: rotate-inner 10s linear infinite; /* Rotate animation */
+  word-spacing: 0.2px;
+}
+
+.middle-text {
+  fill: #4f3c31; /* Default color */
+  font-size: 1.8vw; /* Medium text size */
+  animation: rotate-inner 14s linear infinite; /* Rotate animation */
+  word-spacing: 0.2px;
+}
 }

@@ -10,6 +10,10 @@
         color: white;
     }
 }
+.footer_column p{
+  font-size: 18px;
+  margin-right:50px;
+}
 
 .container.text-center.text-md-start{
   background-color: #080101 !important;
@@ -22,6 +26,7 @@
 }
 
 .schedule{
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,29 +36,35 @@
  
 }
 .timing_p i{
+  font-size: 18px;
   color: #FA660A;
-  font-size: 23px;
+  
   margin-right: 15px;
 }
 
 @media screen and (max-width: 480px) {
   .footer_heading{
-    text-align: left;
+    text-align: center;
+    margin-right:60px;
   }
   /* .footer_div{
    padding: 15px;
   } */
   .timing_p{
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    
   }
   .timing_p i{
     color: #FA660A;
-    font-size: 23px;
+    font-size: 18px;
   }
   .timing_p p{
+    font-size: 18px;
     margin-left: 0px !important;
+    
   }
   .schedule{
     display: flex;

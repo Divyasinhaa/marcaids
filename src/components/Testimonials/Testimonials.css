@@ -1,136 +1,19 @@
-.background-container {
-    position: relative;
-    width: 100%;
-    height: 120vh; /* Adjust based on your needs */
-    background-color: #f0c8b6 !important; /* Beige background */
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    overflow: hidden;
-  }
-  .container{
-    background-color: #f0c8b6 !important;
-  }
-  
-  .semi-circle {
-    position: absolute;
-    width: 150%;
-    height: 150%;
-    background-color: #8db596; 
-    border-radius: 50%;
-    top: 0%;
-    right: 30%;
-  }
-  
-  .content {
-    position: relative; 
-    text-align: center; 
-     left: 250px;
-     z-index: 1;
-    color: white;
-    max-width: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .content blockquote {
-    color:grey;
-    font-size:300px;
-    max-height: 300px;
-  }
-  
-  .content p {
-    font-size: 3.5rem;
-    text-align: center;
-    color:white;
-    font-family: 'Times New Roman', Times, serif ;
-    
-  }
-  .testimonial-cards{
-    background: none !important;
-    background: transparent !important;
-    border: none !important;
-  }
-  .testimonial-container{
-    background: none;
-    background: transparent;
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
-  }
 
-.testimonial-cards .testimonial-container {
-    position: relative;
-    background-color: #d6d9c9;
-    opacity: 75%;
-    border-radius: 20px;
-    margin-top: 25%;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    padding: 20px;
-    max-width: 350px;  
-    overflow: visible  !important; /* Changed to visible to prevent cropping */
-  }
-
-  .testimonial-container .testimonial-quote {
-    font-family: Imprima;
-font-size: 45px;
-font-weight: 400;
-line-height: 52.11px;
-letter-spacing: 0.03em;
-text-align: center;
-
-    font-size: 1.2em;
-    font-style: italic;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .testimonial-container .testimonial-client {
-    font-weight: bold;
-  }
-  
-  .testimonial-container .client-name {
-    font-weight: bold;
-    display: grid;
-    justify-content: center;
-  }
-  
-  .testimonial-container .client-title {
-    font-style: italic;
-    color: #777;
-    /* align-items: center; */
-    display: grid;
-    justify-content: center;
-  }
-  
-  .testimonial-container .client-logo {
-    position: absolute !important;
-    bottom: -30px  !important; /* Adjusted to ensure full visibility */
-    left: -30px  !important;   /* Adjusted to ensure full visibility */
-    width: 120px  !important;  /* Adjust as needed */
-    height: 120px  !important; /* Adjust as needed */
-    border-radius: 50% !important;
-    object-fit: cover !important;
-    right: 10px !important;
-    z-index: 2 !important;
-    visibility: visible;
-    border: 2px solid #000 !important; /* Border color matching background */
-    background-color: white !important;   /* Background color to prevent transparency issues */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
-  }
-  .card-icon {
-    display: none; /* Hide any element with the class 'card-icon' */
-  }
-  
-  .carousel-control-next-icon::after {
-    color: #000;
-
-  }
-  .carousel-control-prev-icon::after {
-    visibility: hidden !important;
-    background: none !important;
-    background-color: transparent !important;
-    background-image: none !important;
+@media (max-width: 768px) {
+    .testimonial-cards {
+      padding: 1rem; /* Adjust padding for mobile */
+    }
+    .testimonial-quote {
+      font-size: 1.5rem; /* Adjust font size for better readability */
+    }
+    .client-name {
+      font-size: 1.5rem; /* Adjust client name size */
+    }
+    .client-title {
+      font-size: 1rem; /* Adjust title size */
+    }
   }
   

@@ -1,43 +1,54 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import "./Navbar.css";
-import { Link,NavLink} from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom';
 import logoo_main from "../assets/logoo_main.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Toggles menuc on hamburger click
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
-    <nav>
-      <Link to="/"><img src={logoo_main} alt="" style={{width:'130px', height:"130px"}} class="d-inline-block align-text-top"/>
-      </Link>
-      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul>
-        <li>
-          <NavLink to="/">HOME</NavLink>
-        </li>
-        <li>
-        <NavLink to="/about">ABOUT US</NavLink>
-        </li>
-        <li>
-        <NavLink to="/blog">BLOG</NavLink>
-        </li>
-        <li>
-        <NavLink to="/testimonials">TESTIMONIALS</NavLink>
-        </li>
-        <li>
-        <NavLink to="/services">OUR SERVICES</NavLink>
-        </li>
-        <li>
-        <NavLink to="/contact">CONTACT</NavLink>
-        </li>
-      </ul>
-    </nav>
+   
+      <nav className="navbar">
+        {/* Logo */}
+        <Link to="/" className="navbar-logo">
+          <img src={logoo_main} alt="Logo" className="navbar-logo-img"/>
+        </Link>
+
+        {/* Search bar */}
+        <div className="searchbarr">
+          <input 
+            type="text" 
+            placeholder="Search" 
+            className="search-input"
+          />
+        </div>
+
+        {/* Hamburger icon */}
+        <div className="menu-icon" onClick={toggleMenu}>
+          <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+          <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+          <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+        </div>
+
+        {/* Navigation Links */}
+        <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
+          <li><NavLink to="/" onClick={toggleMenu}>HOME</NavLink></li>
+          <li><NavLink to="/services" onClick={toggleMenu}>OUR SERVICES</NavLink></li>
+          
+          <li><NavLink to="/testimonials" onClick={toggleMenu}>TESTIMONIALS</NavLink></li>
+          <li><NavLink to="/blog" onClick={toggleMenu}>BLOG</NavLink></li>
+         
+          <li><NavLink to="/contact" onClick={toggleMenu}>CONTACT</NavLink></li>
+        </ul>
+      </nav>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

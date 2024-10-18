@@ -1,10 +1,110 @@
+@import url("https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans");
+
+
 .body{
-  height: 700px;
-  background-color: #e9e6e6 !important;
+height: 900px;
+background-color:white;
+  
+}
+.perform h2{
+  font-family: "SoDo Sans";
+font-size: 60px;
+font-weight: 700;
+line-height: 71.94px;
+text-align: left;
+
+}
+
+.perform{
+  margin-top:30px;
+
+  font-family: "SoDo Sans";
+  
+  
+  
+font-size: 30px;
+font-weight: 400;
+line-height: 43.16px;
+text-align: left;
+
+}
+.market h2{
+  font-family: "SoDo Sans";
+font-size: 60px;
+font-weight: 700;
+line-height: 71.94px;
+text-align: left;
+
+}
+.market{
+  
+  margin-top:30px;
+  font-family: "SoDo Sans";
+font-size: 28px;
+font-weight: 400;
+line-height: 43.16px;
+text-align: left;
+
+}
+.brand h2{
+  font-family: "SoDo Sans";
+font-size: 60px;
+font-weight: 700;
+line-height: 71.94px;
+text-align: left;
+
+}
+.brand{
+  
+  margin-top:30px;
+  font-family: "SoDo Sans";
+font-size: 30px;
+font-weight: 400;
+line-height: 43.16px;
+text-align: left;
+
+}
+.web h2{
+  font-family: "SoDo Sans";
+font-size: 50px;
+font-weight: 700;
+line-height: 71.94px;
+text-align: left;
+
+}
+.web{
+  
+  margin-top:30px;
+  font-family: "SoDo Sans";
+font-size: 30px;
+font-weight: 400;
+line-height: 43.16px;
+text-align: left;
+
+}
+.social h2{
+  font-family: "SoDo Sans";
+font-size: 60px;
+font-weight: 700;
+line-height: 71.94px;
+text-align: left;
+
+}
+
+
+.social{
+  
+  margin-top:30px;
+  font-family: "SoDo Sans";
+font-size: 30px;
+font-weight: 400;
+line-height: 43.16px;
+text-align: left;
+
 }
 .heading{
   font-size: 4em;
-  background-color: #e9e6e6;
+  background-color: white;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -13,7 +113,8 @@
   text-decoration: underline;
 }
 .mainBody{
-        background-color: #e9e6e6;
+  
+        background-color: white;
         padding: 50px;
         text-align: center;
         display: flex;
@@ -22,10 +123,14 @@
       }
       
       .service-card {
+        
+        
+
         background-color: #e9e6e6;
-        border-radius: 10px;
+        border-radius: 50px;
         padding: 20px;
-        width: 680px;
+        width: 90vw;
+        height:500px;
         /* border-width: 10px; */
         border: 2px solid #7a7979;
         /* border-color: #402925; */
@@ -34,11 +139,13 @@
         text-align: left;
       }
       .custom-carousel {
+       
         position: relative; /* Ensure the carousel's position is relative */
         overflow: hidden; /* Hide overflow to prevent shifts */
       }
       .service-card::before
       {
+        
         content:'';
         position:absolute;   
         top:-2px;
@@ -50,6 +157,7 @@
       }
       .service-card::after
       {
+        color:black;
         content:'';
         position:absolute;
         top:-2px;
@@ -63,14 +171,12 @@
       .service-card::after
       {
       background: linear-gradient(235deg,#fff,#7a7979,#424242);
+      
       }
       .carousel-control-next {
         right: -200px !important;
     }
 
-    .d-flex{
-      background: #343434DE;
-
-    }
+    
    
 
