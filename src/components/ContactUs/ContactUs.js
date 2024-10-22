@@ -4,7 +4,7 @@ import bgcontact from "../../assets/backgroundcontact.jpg";
 import React, { useState } from 'react';
 import Footer from '../Footer/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedin ,faPhone} from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const ContactForm = () => {
   const [firstName, setFirstName] = useState('');
@@ -18,18 +18,18 @@ const ContactForm = () => {
       <div className="bg-cover bg-center" style={{ backgroundImage: `url(${bgcontact})` }}>
         <Navbar />
         <div className="text-center lg:mb-8 mb-6">
-          <h1 className="text-4xl lg:text-6xl font-medium mt-4 " style={{ fontFamily: 'Mona Sans, sans-serif' }}>Contact Our Team</h1>
-          <p className="text-gray-500 mt-4 text-xl lg:text-2xl "  style={{ fontFamily: 'Söhne, sans-serif' }}>Got any questions? We are here to help.<br/>Chat to our friendly team and get onboard in 5 minutes.</p>
+          <h1 className="text-4xl lg:text-6xl font-medium mt-4" style={{ fontFamily: 'Mona Sans, sans-serif' }}>Contact Our Team</h1>
+          <p className="text-gray-500 mt-4 text-xl lg:text-2xl" style={{ fontFamily: 'Söhne, sans-serif' }}>
+            Got any questions? We are here to help.<br />Chat to our friendly team and get onboard in 5 minutes.
+          </p>
         </div>
         
-        <div className="flex flex-col lg:flex-row justify-center items-center mx-auto px-4 lg:px-0 w-full max-w-6xl space-y-8 lg:space-y-0 lg:space-x-8">
-
-        <form action="https://formspree.io/f/xyzgroar" method="POST" className="bg-[#A6836A] bg-opacity-40 p-6 rounded-3xl shadow-md 
-        lg:w-[580px] w-full  mx-auto mb-20 lg:mt-6 text-[#000000]">
-
-            <div className='flex flex-col md:flex-row justify-between mb-4 ' style={{ fontFamily: 'Söhne, sans-serif' }}>
-              <div className='flex flex-col w-full md:max-w-xs lg:w-[244px] lg:h-[52px] mb-2 md:mb-0 '>
-                <label htmlFor="firstName" className=" text-[#000000] focus:outline-black">First Name:</label>
+        <div className="flex flex-col lg:flex-row justify-between items-center mx-auto px-4 lg:px-0 w-full max-w-6xl space-y-8 lg:space-y-0 lg:space-x-8">
+          {/* Contact Form */}
+          <form action="https://formspree.io/f/xyzgroar" method="POST" className="bg-[#A6836A] bg-opacity-40 p-6 rounded-3xl shadow-md w-full lg:w-[55%] mx-auto mb-20 lg:mt-6 text-[#000000]">
+            <div className="flex flex-col md:flex-row justify-between mb-4" style={{ fontFamily: 'Söhne, sans-serif' }}>
+              <div className="flex flex-col w-full md:max-w-xs lg:w-[244px] lg:h-[52px] mb-2 md:mb-0">
+                <label htmlFor="firstName" className="text-[#000000] focus:outline-black">First Name:</label>
                 <input
                   type="text"
                   id="firstName"
@@ -37,11 +37,11 @@ const ContactForm = () => {
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                   required
-                  className=" border-black border-[2px] rounded-xl p-2 "
+                  className="border-black border-[2px] rounded-xl p-2"
                 />
               </div>
-              <div className='flex flex-col w-full md:max-w-xs md:ml-4 lg:w-[244px] lg:h-[52px]'>
-                <label htmlFor="lastName" className=" focus:outline-black">Last Name:</label>
+              <div className="flex flex-col w-full md:max-w-xs md:ml-4 lg:w-[244px] lg:h-[52px]">
+                <label htmlFor="lastName" className="focus:outline-black">Last Name:</label>
                 <input
                   type="text"
                   id="lastName"
@@ -53,8 +53,19 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            {/* <div className='mb-4'>
-              <label htmlFor="email" className="font-bold">Email:</label>
+
+            <div className="mb-4">
+              <label className="block mb-1 sm:mb-2">Select Your Service:</label>
+              <select name="service" required className="w-full p-2 sm:p-3 border-black border-[2px] rounded-xl focus:outline-black focus:border-black lg:h-[52px]">
+                <option value="">Choose a service</option>
+                <option value="Web Design">Web Design</option>
+                <option value="SEO">SEO</option>
+                <option value="Marketing">Marketing</option>
+              </select>
+            </div>
+
+            <div className="mb-4">
+              <label htmlFor="email" className="mb-1 block">Email:</label>
               <input
                 type="email"
                 id="email"
@@ -62,62 +73,11 @@ const ContactForm = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="border border-gray-300 rounded-lg p-2 w-38px lg:w-full"
+                className="border-black border-[2px] rounded-xl p-2 w-full h-12 lg:w-[325px] lg:h-[52px]"
               />
-            </div> */}
-            
-           
-              {/* <label htmlFor="Email" className="font-bold">Select Your Service:</label>
-              <textarea
-                id="email"
-                name="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="border border-gray-300 rounded-lg p-2 w-full h-12"
-              /> */}
-
-<div className='mb-4'>
-<label className="block mb-1 sm:mb-2 ">Select Your Service</label>
-      <select
-        name="service"
-        
-        required
-        className="w-full p-2 sm:p-3 border-black border-[2px] rounded-xl focus:outline-black focus:border-black lg:h-[52px]"
-      >
-        <option value="">Choose a service</option>
-        <option value="Web Design">Web Design</option>
-        <option value="SEO">SEO</option>
-        <option value="Marketing">Marketing</option>
-      </select>
             </div>
 
-            <div className='mb-4'>
-  <label htmlFor="email" className=" mb-1 block">Email:</label>
-  <input
-    type="email"
-    id="email"
-    name="email"
-    value={email}
-    onChange={(e) => setEmail(e.target.value)}
-    required
-    className="border-black border-[2px] rounded-xl p-2 w-full h-12 lg:w-[325px] lg:h-[52px]" 
-  />
-</div>
-
-            {/* <div className='mb-4'>
-              <label htmlFor="phoneNumber" className="font-bold">Phone Number:</label>
-              <input
-                type="phoneNumber"
-                id="phoneNumber"
-                name="phoneNumber"
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
-                className="border border-gray-300 rounded-lg p-2 w-full h-24"
-              />
-            </div> */}
-
-<div className='mb-4'>
+            <div className="mb-4">
               <label htmlFor="phoneno" className="mb-1 block">Phone no:</label>
               <textarea
                 id="phoneno"
@@ -128,7 +88,8 @@ const ContactForm = () => {
                 className="border-black border-[2px] rounded-xl p-2 w-full h-12 lg:w-[325px] lg:h-[52px]"
               />
             </div>
-            <div className='mb-4'>
+
+            <div className="mb-4">
               <label htmlFor="message" className="mb-1 block">Message:</label>
               <textarea
                 id="message"
@@ -139,15 +100,19 @@ const ContactForm = () => {
                 className="border-black border-[2px] rounded-xl p-2 w-full h-24 lg:w-[365px] lg:h-[191px]"
               />
             </div>
-            <button type="submit" className="bg-white text-gray-800 rounded-lg py-2 px-4 hover:bg-gray-100 transition duration-200">Submit</button>
+
+            <button type="submit" className="bg-white text-gray-800 rounded-lg py-2 px-4 hover:bg-gray-100 transition duration-200">
+              Submit
+            </button>
           </form>
-    
-          <div className="bg-white bg-opacity-10 p-6 max-w-sm w-full text-left ">
-            <h2 className="text-xl lg:text-2xl font-semibold text-left " style={{ fontFamily: 'Mona sans, sans-serif' }}>Connect With Us</h2>
-            <p className="text-left text-xl"style={{ fontFamily: 'Söhne, sans-serif' }}>Speak to our friendly team</p>
+
+          {/* Contact Info */}
+          <div className="bg-white bg-opacity-10 p-6 lg:w-[40%] w-full text-left">
+            <h2 className="text-xl lg:text-2xl font-semibold text-left" style={{ fontFamily: 'Mona Sans, sans-serif' }}>Connect With Us</h2>
+            <p className="text-left text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>Speak to our friendly team</p>
             <ul className="list-none p-0 text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>
               <li>📧 E-mail us at <i>shikhu@marcaids.com</i></li>
-              <p className="text-left text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>Or</p>
+              <li className="lg:mb-8"><i>chirag@marcaids.com</i></li>
               <li className="flex items-center">
                 Follow us on:
                 <a href="https://www.instagram.com/your_instagram" target="_blank" rel="noopener noreferrer" className="ml-2">
@@ -158,12 +123,14 @@ const ContactForm = () => {
                 </a>
               </li>
             </ul>
-            <h2 className="text-xl lg:text-2xl font-semibold mt-4 text-left"style={{ fontFamily: 'Mona sans, sans-serif' }}>Call Us</h2>
+
+            <h2 className="text-xl lg:text-2xl font-semibold mt-4 text-left" style={{ fontFamily: 'Mona Sans, sans-serif' }}>Call Us</h2>
             <p className="text-left text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>Call our team Mon-Fri from 9am-6pm</p>
             <p className="text-left text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>📞+91 8580440313</p>
             <p className="text-left text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>📞+91 8816062696</p>
-            <h2 className="text-xl lg:text-2xl font-semibold mt-4 text-left" style={{ fontFamily: 'Mona sans, sans-serif' }}>Services</h2>
-            <ul className="list-none p-0 text-xl " style={{ fontFamily: 'Söhne, sans-serif' }}>
+
+            <h2 className="text-xl lg:text-2xl font-semibold mt-4 text-left" style={{ fontFamily: 'Mona Sans, sans-serif' }}>Services</h2>
+            <ul className="list-none p-0 text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>
               <li>Performance Marketing</li>
               <li>Web Design & Development</li>
               <li>Branding</li>

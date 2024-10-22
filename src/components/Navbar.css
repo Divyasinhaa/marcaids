@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
 
-.navbar {
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: Background color with some transparency */
-    position: fixed; /* Keep the navbar fixed */
+    /* background-color: rgba(255, 255, 255, 0.8);  */
+    position: absolute; /* Keep the navbar fixed */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensure the navbar is above the background image */
+    z-index: 100; /* Ensure the navbar is above the background image */
+    /* background:transparent; */
 }
 
 

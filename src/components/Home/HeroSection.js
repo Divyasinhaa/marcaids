@@ -51,20 +51,16 @@ const HeroSection = () => {
   return (
     <>
       {!showConcentricCircle && ( // Show HeroSection if ConcentricCircle is not visible
-        <div className="App" style={{background: "#C8C4B9"
-        }}>
-          
-          
+        <div className="App">
+         
+         
           <div
             className={`HS ${isOpen ? "open" : ""}`} // Apply class based on isOpen state
-            style={{
-              backgroundImage: `url(${bghome})`,
-              
-            }} // HeroSection background
+             
             onClick={handleClick} // Click handler for HeroSection
           >
-           <Navbar/>
-           
+          <Navbar/>
+          
             
             <div className="hero-content">
             

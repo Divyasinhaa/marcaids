@@ -10,6 +10,7 @@
   transition: background-color 0.3s ease;
 }
 .App{
+  
   background-size:contain;
   background-color:#c8c4b9;
   position: relative;
@@ -33,6 +34,7 @@ z-index: -100;
 
 .HS {
   
+    margin:0;
     height:100vh;               
     width: 100vw; 
     position: relative;
@@ -44,6 +46,8 @@ z-index: -100;
     color: white;
     text-align: center;
     padding: 20px;
+    
+    background-image:url(bg-home.jpeg);
     /* cursor: pointer;
     overflow: hidden; */
   }

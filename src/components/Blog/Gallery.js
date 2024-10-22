@@ -35,14 +35,14 @@ const Gallery = () => {
         {images.map((image, index) => (
           <div
             key={image.id}
-            className={`bg-gray-200 rounded-lg shadow-md ${
+            className={`bg-gray-200 rounded-none shadow-md ${
               index % 2 === 0 ? 'h-[878px]' : 'h-[798px]'
             }`} // Set height based on index
           >
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-[560px] object-cover rounded-lg transition-transform duration-300 transform hover:scale-95" // Set image height to 560px
+              className="w-full h-[560px] object-cover rounded-none transition-transform duration-300 transform hover:scale-95" // Set image height to 560px
             />
           </div>
         ))}

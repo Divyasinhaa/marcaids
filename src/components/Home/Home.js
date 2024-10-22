@@ -32,7 +32,7 @@ const Home = () => {
 
 <Link to="/about">
     <button className="px-2 py-2  lg:py-3 mr-0 lg:mr-10 bg-white text-black font-semibold rounded-full text-xs sm:text-sm lg:text-base">
-  KNOW MORE
+  ABOUT US
 </button>
 </Link>
         </section>
@@ -56,7 +56,7 @@ const Home = () => {
   <div className="mt-8 flex justify-center lg:justify-end">
 <Link to="/services">
     <button className="px-6 py-2  lg:py-3 mr-0 lg:mr-10 bg-[#000000] text-white font-semibold rounded-full text-xs sm:text-sm lg:text-base ml-52 lg:ml-0">
-  KNOW MORE
+  OUR SERVICES
 </button>
 </Link>
 
@@ -78,7 +78,7 @@ const Home = () => {
   <div className="flex justify-end mt-4">
   <Link to="/about">
     <button className="absolute bottom-3 lg:bottom-6 right-6 px-6 py-2 sm:px-6 mt-4 sm:py-3 bg-[#000000] text-white font-semibold rounded-full text-xs sm:text-sm lg:text-base">
-  KNOW MORE
+  ABOUT US
 </button>
 </Link>
   {/* <Link to="/about">
@@ -112,7 +112,7 @@ const Home = () => {
     </div>
     <Link to="/testimonials">
     <button className="absolute bottom-3 lg:bottom-6 right-6 px-4 py-2 sm:px-6 sm:py-3 bg-white text-black font-semibold rounded-full text-xs sm:text-sm lg:text-base">
-  Know More
+  View Testimonials
 </button>
 
     </Link>

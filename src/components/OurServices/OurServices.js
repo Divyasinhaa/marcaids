@@ -54,8 +54,7 @@ function OurServices() {
               <div className="w-full md:w-2/3 md:pl-8 text-start md:text-left">
                 <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">WEB DESIGN AND DEVELOPMENT</h2>
                 <p className="text-lg md:text-xl lg:text-2xl mb-4 md:mb-8">
-                Your website should be more than just a page—it should be an experience. As a web design and development agency, we craft sites that look great and work flawlessly. Whether you need to build a Shopify website or a WordPress website, our team of the best web developers in the USA will bring your vision to life. 
-
+                Your website should be more than just a page—it should be an experience. As a web design and development agency, we craft sites that look great and work flawlessly. Whether you need to build a Shopify website or a WordPress website, our team of the best web developers in the USA will bring your vision to life. Partner with one of the best website development companies and make your mark!
                 </p>
                 <Link to="/contact">
                   <button className="bg-gray-700 text-white rounded-full py-2 md:py-3 px-6 md:px-8 hover:bg-gray-800 transition">
@@ -71,7 +70,7 @@ function OurServices() {
               className="relative bg-gradient-to-br from-gray-100 to-gray-400 rounded-3xl shadow-lg p-6 md:p-8 flex flex-col md:flex-row items-center"
               style={{ height: 'auto', minHeight: '400px' }}>
               <div className="w-full md:w-1/3 flex justify-center mb-6 md:mb-0">
-                <img src={img3c} alt="Web Design and Development" className="w-80 h-80 md:w-60 md:h-60 object-cover rounded-full" />
+                <img src={img3c} alt="Web Design and Development" className="w-60 h-60 md:w-60 md:h-60 object-cover rounded-full" />
               </div>
               <div className="w-full md:w-2/3 md:pl-8 text-start md:text-left">
                 <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">BRANDING</h2>
@@ -97,7 +96,7 @@ function OurServices() {
       <img
         src={img4c}
         alt="Web Design and Development"
-        className="w-60 h-60 md:w-72 md:h-72 object-cover rounded-full"
+        className="w-80 h-80 md:w-72 md:h-72 object-cover rounded-full"
       />
     </div>
     <div className="w-full md:w-2/3 md:pl-8 text-start md:text-left">
@@ -121,7 +120,7 @@ function OurServices() {
               className="relative bg-gradient-to-br from-gray-100 to-gray-400 rounded-3xl shadow-lg p-6 md:p-8 flex flex-col md:flex-row items-center"
               style={{ height: 'auto', minHeight: '400px' }}>
               <div className="w-full md:w-1/3 flex justify-center mb-6 md:mb-0">
-                <img src={img5c} alt="Web Design and Development" className="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full" />
+                <img src={img5c} alt="Web Design and Development" className="w-80 h-80 md:w-60 md:h-60 object-cover rounded-full" />
               </div>
               <div className="w-full md:w-2/3 md:pl-8  md:text-left">
                 <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-start">CONTENT CREATION</h2>

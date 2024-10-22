@@ -26,7 +26,7 @@ const ContactPage = () => {
       <FAQ />
       <div className="bg-[#DACBC1] p-4 sm:p-6 md:p-10">
         {/* Top Links */}
-        <div className="flex justify-center md:justify-end space-x-3 sm:space-x-6 md:space-x-10 mt-6 md:mt-10">
+        <div className="flex justify-center md:justify-end space-x-3 sm:space-x-6 md:space-x-10 mt-6 md:mt-10 lg:mr-40">
           <h3>
             <a href="/blog" className="text-black font-semibold no-underline hover:underline">
               PROJECTS
@@ -42,8 +42,8 @@ const ContactPage = () => {
         {/* Contact Section */}
         <div className="flex flex-col md:flex-row items-start justify-center gap-6 sm:gap-8 md:gap-10 mt-8 md:mt-10">
           {/* Contact Info */}
-          <div className="flex-1 text-center md:text-left p-4 sm:p-5 md:p-5">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-5" style={{ fontFamily: "'Inria Serif', serif" }}>CONTACT</h2>
+          <div className="flex-1 text-center md:text-left p-4 sm:p-5 md:p-5 lg:mt-40">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-5" style={{ fontFamily: "'Inria Serif', serif" }}>CONTACT</h2>
             <div className="text-base sm:text-lg md:text-xl space-y-2 sm:space-y-3">
               <p>Address: Delhi Gurugram</p>
               <p>Phone: +91 8580440313 / +91 8816062696</p>
@@ -57,7 +57,7 @@ const ContactPage = () => {
             method="POST"
             className="flex-1 bg-[#A78770] bg-opacity-40 p-4 sm:p-6 md:p-8 rounded-md shadow-lg max-w-md w-full mx-auto md:mx-0"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 sm:mb-5" style={{ fontFamily: "'Inria Serif', serif" }}>CONTACT FORM</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-4 sm:mb-5" style={{ fontFamily: "'Inria Serif', serif" }}>CONTACT FORM</h2>
 
             <div className="mb-3 sm:mb-4">
               <label className="block font-semibold mb-1 sm:mb-2">Your Name</label>

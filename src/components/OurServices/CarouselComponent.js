@@ -20,9 +20,9 @@ const CarouselComponent = () => {
                 <div className="absolute w-[1500px] h-[1500px] bg-[#8B705D] opacity-20 rounded-full lg:-top-80 sm:-top-40 lg:left-2/3 sm:left-1/2"></div>
 
                 {/* Main Content */}
-                <div className="relative lg:text-right z-10 lg:pr-20 mb-65 mr-20 lg:mr-0">
+                <div className="relative lg:text-right z-10 lg:pr-20 lg:mb-45 mr-20 lg:mr-0 lg:mb-60 mb-80">
                     <h1 className="lg:text-[70px] sm:text-4xl text-5xl font-semibold text-black lg:mb-4 " style={{ fontFamily: "'Inria Serif', serif" }}>MARCAIDS</h1>
-                    <h2 className="lg:text-5xl sm:text-3xl text-4xl font-semibold text-black mr-14" style={{ fontFamily: "'Inria Serif', serif" }}>STUDIOS</h2>
+                    <h2 className="lg:text-5xl sm:text-3xl text-4xl font-semibold text-black lg:mr-14" style={{ fontFamily: "'Inria Serif', serif" }}>STUDIOS</h2>
                 </div>
             </div>
 
