@@ -6,7 +6,7 @@ import blog from '../../assets/blog.jpg';
 const ClientSuccessTales = () => {
   return (
     <>
-      <div className="flex flex-col justify-between bg-[#555d50] text-white max-w-[1521px] h-[400px] md:h-[800px]">
+      <div className="flex flex-col justify-between bg-[rgb(249,250,249)] text-green max-w-[1521px] h-[400px] md:h-[800px]">
         
         {/* Header Content */}
         <div className="flex flex-col items-center mb-5">

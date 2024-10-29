@@ -9,13 +9,13 @@ const ConcentricCircle = ({ onClick }) => {
   return (
     <>
       
-      <div className="concentric-circle-container" onClick={onClick}>
+      <div className="concentric-circle-container" >
       <Navbar/>
-        <div className="circle center-image">
+        <div className="circle center-image" >
           <img src={home5} alt="Center" />
         </div>
 
-        <svg className="circle-svg" viewBox="0 0 100 100">
+        <svg className="circle-svg" onClick={onClick} viewBox="0 0 100 100">
           <defs>
             <path
               id="innerCirclePath"

@@ -16,7 +16,7 @@ function AboutUs() {
         <div className="container mx-auto lg:px-4 px-0">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/3 bg-white flex items-center justify-center py-8 lg:py-0">
-              <h1 className="text-center text-black font-medium text-3xl lg:text-5xl ">ABOUT US</h1>
+              <h1 className="text-center text-black font-medium text-3xl lg:text-5xl lg:mb-80">ABOUT US</h1>
             </div>
             <div className="lg:w-2/3 bg-white flex flex-col items-center lg:items-start p-6 lg:p-12">
               <img src={aaboutus} className="w-full object-cover h-64 lg:h-auto mb-4 rounded-2xl" alt="About Us" />

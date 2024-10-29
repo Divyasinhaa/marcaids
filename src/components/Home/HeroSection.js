@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import bghome from "../../assets/bg-home.jpeg";
+//import bghome from "../../assets/bg-home.png";
 import Navbar from "../Navbar";
 import ConcentricCircle from "./ConcentricCircle";
 import "./HeroSection.css";
@@ -52,39 +52,39 @@ const HeroSection = () => {
     <>
       {!showConcentricCircle && ( // Show HeroSection if ConcentricCircle is not visible
         <div className="App">
-         
+      
          
           <div
             className={`HS ${isOpen ? "open" : ""}`} // Apply class based on isOpen state
              
-            onClick={handleClick} // Click handler for HeroSection
+             // Click handler for HeroSection
           >
-          <Navbar/>
+           <Navbar/>
           
             
             <div className="hero-content">
             
               <div className={`hero-sec ${isOpen ? "slide-out" : ""}`}>
               
-                <div className="container">
+                <div className="container" onClick={handleClick}>
                   <div className="row">
                   
-                    <div className="col-md-7">
-                      <h1 style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}>Building</h1>
+                    <div className="col-md-7 k" >
+                      <h1 style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 ,textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }} className="text-black">Building</h1>
                     </div>
-                    <div className="col-md-4">
-                      <p style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}>Let's build your identity and your brand</p>
+                    <div className="col-md-4 text-white ml-10">
+                      <p style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 ,textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)"  }}>Let's build your identity and your brand</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="container">
+                <div className="container text-black">
                   <div className="row">
-                    <div className="col-md-5">
-                      <h2 style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}>your</h2>
+                    <div className="col-md-5 text-black">
+                      <h2 style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 ,textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)"  }}>your</h2>
                     </div>
-                    <div className="col-md-5">
-                      <h1 style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 }}>Business</h1>
+                    <div className="col-md-5 text-black">
+                      <h1 style={{ fontFamily: "'IM Fell Great Primer', serif", fontWeight: 100 ,textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>Business</h1>
                     </div>
                   </div>
                 </div>

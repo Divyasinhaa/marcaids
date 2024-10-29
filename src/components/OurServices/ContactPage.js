@@ -25,19 +25,21 @@ const ContactPage = () => {
       <OurServices />
       <FAQ />
       <div className="bg-[#DACBC1] p-4 sm:p-6 md:p-10">
-        {/* Top Links */}
-        <div className="flex justify-center md:justify-end space-x-3 sm:space-x-6 md:space-x-10 mt-6 md:mt-10 lg:mr-40">
-          <h3>
-            <a href="/blog" className="text-black font-semibold no-underline hover:underline">
-              PROJECTS
-            </a>
-          </h3>
-          <h3>
-            <a href="/contact" className="text-black font-semibold no-underline hover:underline">
-              CONTACT
-            </a>
-          </h3>
-        </div>
+  {/* Top Links */}
+  <div className="flex justify-center md:justify-end space-x-3 sm:space-x-6 md:space-x-48 mt-6 md:mt-10 ">
+    <h3>
+      <a href="/blog" className="text-black font-semibold no-underline hover:underline">
+        PROJECTS
+      </a>
+    </h3>
+    <h3 className="ml-30 md:ml-10">  {/* Added margin-left */}
+      <a href="/contact" className="text-black font-semibold no-underline hover:underline">
+        CONTACT
+      </a>
+    </h3>
+  </div>
+
+
 
         {/* Contact Section */}
         <div className="flex flex-col md:flex-row items-start justify-center gap-6 sm:gap-8 md:gap-10 mt-8 md:mt-10">

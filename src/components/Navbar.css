@@ -70,7 +70,7 @@
     font-family: "Sniglet", system-ui;
     margin-right: 40px;
     border-radius: 50px;
-    background-color: rgba(99, 64, 42, 0.3);
+    background-color: rgba(99, 64, 42, 0.8);
     height: 36px;
     width: 479px;
     display: flex;
@@ -97,7 +97,7 @@
     color: #fff;
 }
 
-.nav-links.open {
+/* .nav-links.open {
     display: block;
     position: absolute;
     top: 60px;
@@ -109,7 +109,7 @@
     z-index: 1;
     height:300px;
     
-}
+} */
 
 .nav-links.open li {
    
