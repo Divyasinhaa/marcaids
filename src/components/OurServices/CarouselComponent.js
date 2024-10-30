@@ -22,7 +22,7 @@ const CarouselComponent = () => {
                 {/* Main Content */}
                 <div className="relative lg:text-right z-10 lg:pr-20 lg:mb-45 mr-20 lg:mr-0 lg:mb-60 mb-80">
                     <h1 className="lg:text-[70px] sm:text-4xl text-5xl font-semibold text-black lg:mb-4 " style={{ fontFamily: "'Inria Serif', serif" }}>MARCAIDS</h1>
-                    <h2 className="lg:text-5xl sm:text-3xl text-4xl font-semibold text-black lg:mr-14" style={{ fontFamily: "'Inria Serif', serif" }}>STUDIOS</h2>
+                    <h2 className="lg:text-5xl sm:text-3xl text-4xl font-semibold text-black lg:mr-14 mr-0" style={{ fontFamily: "'Inria Serif', serif" }}>STUDIOS</h2>
                 </div>
             </div>
 

@@ -11,7 +11,7 @@ const ClientSuccessTales = () => {
         {/* Header Content */}
         <div className="flex flex-col items-center mb-5">
           <h2 className="font-serif text-[5vw] md:text-[5.8vw] font-medium text-center lg:mt-0 mt-4">
-            CLIENTS SUCCESS TALES
+            CLIENT SUCCESS TALES
           </h2>
         </div>
 

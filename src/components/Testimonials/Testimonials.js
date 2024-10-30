@@ -34,7 +34,7 @@ const Testimonials = () => {
                       <div className="flex flex-col items-center text-center">
                         <div className="testimonial-quote text-2xl lg:text-[32px] md:text-xl text-black lg:mb-4 sm:mb-0 lg:mt-12">
                           <p>
-                          ❝Partnering with Marcaids has significantly boosted our interior design business. Their lead generation expertise and targeted campaigns have driven increased website visits, resulting in tangible growth. Their transparency and communication make them invaluable partners.❞
+                          ❝Partnering it with Marcaids has significantly boosted our interior design business. Their lead generation expertise and targeted campaigns have driven increased website visits, resulting in tangible growth. Their transparency and communication make them invaluable partners.❞
                           </p>
                         </div>
                         <div className="testimonial-client lg:mt-5 sm:mt-0 ">
