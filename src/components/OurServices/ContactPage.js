@@ -47,15 +47,15 @@ const ContactPage = () => {
           <div className="flex-1 text-center md:text-left p-4 sm:p-5 md:p-5 lg:mt-40">
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-5" style={{ fontFamily: "'Inria Serif', serif" }}>CONTACT</h2>
             <div className="text-base sm:text-lg md:text-xl space-y-2 sm:space-y-3">
-              <p>Address: Delhi Gurugram</p>
-              <p>Phone: +91 8580440313 / +91 8816062696</p>
-              <p>Email: shikhu@marcaids.com</p>
+              <p>Address: Delhi</p>
+              <p>Phone: +91 1234567890 / +91 1234567890</p>
+              <p>Email: abc@gmail.com</p>
             </div>
           </div>
 
           {/* Contact Form */}
           <form
-            action="https://formspree.io/f/xyzgroar"
+            action="https://formspree.io/f/mpwdqaaj"
             method="POST"
             className="flex-1 bg-[#A78770] bg-opacity-40 p-4 sm:p-6 md:p-8 rounded-md shadow-lg max-w-md w-full mx-auto md:mx-0"
           >

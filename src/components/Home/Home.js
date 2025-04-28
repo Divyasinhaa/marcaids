@@ -20,11 +20,11 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-      <div className="w-full   font-sans text-black">
+      <div className="   font-sans text-black">
         
         {/* Top Header Section */}
         <section className="bg-[#4f3c31] h-24 flex items-center justify-between px-8">
-          <span className="text-white text-xl sm:text-4xl">Marcaids</span>
+          <span className="text-white text-xl sm:text-4xl">Marketing Web</span>
           {/* <Link to="/about">
           <Button variant="light" className="text-xs font-semibold rounded-full px-4 py-2 text-end">KNOW MORE</Button>
 
@@ -69,7 +69,7 @@ const Home = () => {
   <h2 className="text-3xl sm:text-4xl lg:text-6xl lg:mb-4 mb-2 text-left" style={{ fontFamily: 'Imprima, sans-serif' }}>What we do?</h2>
   <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8 ml-2 mr-2">
     <p className="flex-1 mb-2 lg:mb-0 text-base sm:text-lg lg:text-4xl leading-relaxed text-left mt-4" style={{ fontFamily: 'Imprima, sans-serif' }}>
-      Your brand isn’t just a business—it’s a story waiting to be told. At Marcaids, we specialize in bringing that story to life. As one of the top marketing agencies in the USA, we craft marketing strategies that are as unique as your brand. From performance marketing that boosts ROI and ROAS to strategic brand development that sets you apart, we offer everything to elevate your brand. Whether you’re looking for the best content creation agency in the USA or a web design and development partner, we combine creativity and strategy to deliver campaigns with real impact. Ready to make your mark with digital marketing? Let’s do it together!
+    Marketing via smartphones, protein stock, and clothing involves strategically connecting with consumers across different industries and platforms. In smartphone marketing, brands use mobile apps, social media, push notifications, SMS, and influencer promotions to engage with audiences instantly and personally. Smartphones allow for real-time marketing, targeted campaigns based on user behavior, and a highly interactive shopping experience. For protein stock marketing, the approach focuses on reaching health-conscious individuals, gym enthusiasts, and athletes. By highlighting the benefits of protein supplements through educational content, fitness influencer collaborations, sponsorships, and fitness app promotions, brands build credibility and trust. Offering free samples and loyalty programs further strengthens consumer connection. In the clothing sector, marketing emphasizes creating a strong brand identity and trendsetting. This is achieved through showcasing new collections with high-quality visuals, collaborating with fashion influencers, running targeted social media campaigns, and offering personalized shopping experiences. Together, these strategies help brands in smartphones, protein, and clothing industries effectively reach, engage, and convert their target audiences.
     </p>
     <img src={whatwedo} alt="What we do" className="w-full max-h-[250px] sm:max-h-[350px] lg:max-h-[390px] lg:w-[390px] rounded-lg object-cover mt-6" />
   </div>
@@ -95,29 +95,29 @@ const Home = () => {
 
 
         {/* Testimonials Section */}
-        <section className="mt-12">
+        {/* <section className="mt-12">
   <h2 className="text-3xl  mb-5 text-left sm:text-5xl ml-4 lg:ml-20 mt-8 lg:mt-20 ">Testimonials</h2>
   <div className="flex flex-col sm:flex-row items-center bg-[#b9afa8] p-6 rounded-3xl shadow-lg w-full max-w-[900px] lg:max-w-[1327px] mx-auto lg:p-12 relative">
     <img 
       src={space} 
       alt="Sandeep Soni" 
       className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mb-4 sm:mb-0 sm:mr-8 lg:mr-12 lg:w-52 lg:h-52 object-cover" 
-    />
-    <div className="text-left sm:text-left flex-1" >
+    /> */}
+    {/* <div className="text-left sm:text-left flex-1" >
       <h3 className="text-lg sm:text-xl lg:text-[40px] font-semibold">Sandeep Soni</h3>
       <p className="text-sm sm:text-base lg:text-3xl lg:mt-4 mt-2">CEO, The Space Crafters</p>
       <blockquote className="text-sm sm:text-md lg:text-2xl mt-2 leading-relaxed mt-4">
         Partnering with Marcaids has significantly boosted our interior design business.
       </blockquote>
-    </div>
-    <Link to="/testimonials">
-    <button className="absolute bottom-3 lg:bottom-6 right-6 px-4 py-2 sm:px-6 sm:py-3 bg-white text-black font-semibold rounded-full text-xs sm:text-sm lg:text-base">
+    </div> */}
+    {/* <Link to="/testimonials"> */}
+    {/* <button className="absolute bottom-3 lg:bottom-6 right-6 px-4 py-2 sm:px-6 sm:py-3 bg-white text-black font-semibold rounded-full text-xs sm:text-sm lg:text-base">
   View Testimonials
-</button>
+</button> */}
 
-    </Link>
+    {/* </Link>
   </div>
-</section>
+</section> */}
 
 
 

@@ -31,11 +31,11 @@ const Footer = () => {
                 className="mx-auto mb-4"
                 color="white"
               >
-                <h5 className="text-uppercase fw-bold mb-4">
+                {/* <h5 className="text-uppercase fw-bold mb-4">
                 
                   <img src={logoo_main_footer} alt="" width="200" height="150" />
                  
-                </h5>
+                </h5> */}
                 <p className="text-white">
                   Your one-stop partner for marketing solutions that grows your
                   business. We help you build a brand, generate leads and drive
@@ -47,17 +47,17 @@ const Footer = () => {
                   </a>
                   <a
                     style={{ color: "white" ,marginLeft:"7px"}}
-                    href="https://www.linkedin.com/company/marcaids/"
+                    href="https://www.linkedin.com/"
                   >
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
                   <a
                     style={{ color: "white" ,marginLeft:"7px" }}
-                    href="https://www.instagram.com/marcaidss?igsh=bndzc2IzczA5YjQy"
+                    href="https://www.instagram.com/"
                   >
                     <i className="fa-brands fa-instagram"></i>
                   </a>
-                  <a style={{ color: "white" ,marginLeft:"7px"}} href="https://x.com/marcaidsss">
+                  <a style={{ color: "white" ,marginLeft:"7px"}} href="https://x.com/">
                     <i className="fa-brands fa-twitter"></i>
                   </a>
                 </div>
@@ -67,14 +67,14 @@ const Footer = () => {
                 <h5 className="text-white fw-bold mb-4  footer_heading" style={{ fontSize: "1.6rem" }}>
                   Our Location
                 </h5>
-                <p className="text-white">Suncity C-35, Haryana</p>
+                <p className="text-white">Delhi</p>
                 <p className="text-white">
                   <i className="fa-solid fa-phone"></i>
-                  <span>+91 8816062696</span>
+                  <span>+91 1234567890</span>
                 </p>
                 <p className="text-white">
                   <i className="fa-solid fa-phone"></i>
-                  <span> +91 8580440313</span>
+                  <span> +91 1234567890</span>
                 </p>
               </MDBCol>
 
@@ -139,9 +139,9 @@ const Footer = () => {
 
         <hr style={{ color: "white" }} />
         <div className="ml-5 p-4" style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
-          Copyright © 2024
+          Copyright © 2025
           <span className="ml-5 p-4" style={{ marginLeft: "65%" }}>
-            Crafted with <i className="fa-solid fa-heart"></i> <span>Marcaids</span>
+            Crafted with <i className="fa-solid fa-heart"></i> <span>marketing web</span>
           </span>
         </div>
       </MDBFooter>

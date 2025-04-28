@@ -3,13 +3,22 @@ import "./FAQ.css"; // Import your custom styles if necessary
 
 
 const faqData = [
-  { question: "Why should i hire marcaids for handling my digital marketing?", answer: "Hiring Marcaids means partnering with a team that understands the unique needs of their clients. We specialize in crafting tailored marketing strategies to build your brand, increase your visibility, and attract your ideal clients." },
-  { question: "How much do you charge your clients?", answer: "Our offerings can be customised or tailored as per your requirements. Whether you wish to choose full fledged digital marketing or a specialized service, we're here to offer you the best ones." },
-  { question: "What are the metrics used by you to measure success of a campaign/ROI", answer: "The metrics we use to measure the success of our campaigns include: 1. Click through rate,2. ROAS,3. Impressions,4. Cost per thousand impressions,5. Cost per click,6. Cost per acquisition,7. Cost per lead,8. Ad spends"},
-  { question: "Why my business needs digital marketing and what kind of impact can I expect if I onboard with Marcaids?", answer: "Every business whether small or big needs digital marketing in today's time to ensure better visibility and awareness in a highly competitive market. Marcaids will work on every aspect of your digital marketing strategies to ensure your growth is on a steady path and ahead of other competitors. " },
-  { question: "Have you worked with any interior designer before? If yes which services did you cater to?", answer: "Yes, we have worked with interior designers, providing services like social media marketing, SEO optimization, PPC advertising, and portfolio development. Our goal is to help designers build a strong online presence and attract more clients through effective digital strategies. " },
-  { question: "Do you have a portfolio/testimonials sharing your work as a marketing agency and what kind of results have you generated?", answer: "ans" },
-  { question: "How are you gonna help us with closing clients?", answer: "We help you close clients by following a simple, effective process. First, we conduct in-depth market research to understand your audience and identify what they're looking for. Then, we create a compelling offer tailored to meet their needs. Finally, we connect you directly to qualified leads, making the process smooth and hassle-free so you can focus on doing what you do best: delivering amazing design services." },
+  { 
+    question: "How does smartphone marketing help businesses grow?", 
+    answer: "Smartphone marketing helps businesses by enabling them to reach their target audience anytime and anywhere. With strategies like SMS marketing, mobile-friendly websites, push notifications, and mobile ads, brands can enhance engagement and drive more conversions."
+  },
+  { 
+    question: "How is digital marketing important for the stock market industry?", 
+    answer: "Digital marketing in the stock market industry builds trust through educational content, webinars, newsletters, and real-time updates. It helps stock companies attract investors, build credibility, and increase trading activity through online platforms."
+  },
+  { 
+    question: "What are effective marketing strategies for clothing brands?", 
+    answer: "Clothing brands use social media campaigns, influencer collaborations, email marketing, and seasonal promotions to create brand awareness and boost sales. Visual storytelling and customer-generated content are especially powerful tools in fashion marketing."
+  },
+  { 
+    question: "How can digital marketing boost sales for protein and fitness products?", 
+    answer: "Marketing protein and fitness products through content marketing, influencer partnerships, targeted ads, and fitness community engagement helps build brand trust. Highlighting product benefits through videos, blogs, and social proof significantly increases conversion rates."
+  }
   // Add more questions and answers here
 ];
 

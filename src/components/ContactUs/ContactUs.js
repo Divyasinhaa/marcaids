@@ -26,7 +26,7 @@ const ContactForm = () => {
         
         <div className="flex flex-col lg:flex-row justify-between items-center mx-auto px-4 lg:px-0 w-full max-w-6xl space-y-8 lg:space-y-0 lg:space-x-8">
           {/* Contact Form */}
-          <form action="https://formspree.io/f/xyzgroar" method="POST" className="bg-[#A6836A] bg-opacity-40 p-6 rounded-3xl shadow-md w-full lg:w-[55%] mx-auto mb-20 lg:mt-6 text-[#000000]">
+          <form action="https://formspree.io/f/mpwdqaaj" method="POST" className="bg-[#A6836A] bg-opacity-40 p-6 rounded-3xl shadow-md w-full lg:w-[55%] mx-auto mb-20 lg:mt-6 text-[#000000]">
             <div className="flex flex-col md:flex-row justify-between mb-4" style={{ fontFamily: 'Söhne, sans-serif' }}>
               <div className="flex flex-col w-full md:max-w-xs lg:w-[244px] lg:h-[52px] mb-2 md:mb-0">
                 <label htmlFor="firstName" className="text-[#000000] focus:outline-black">First Name:</label>
@@ -58,10 +58,10 @@ const ContactForm = () => {
               <label className="block mb-1 sm:mb-2">Select Your Service:</label>
               <select name="service" required className="w-full p-2 sm:p-3 border-black border-[2px] rounded-xl focus:outline-black focus:border-black lg:h-[52px]">
                 <option value="">Choose a service</option>
-                <option value="Web Design">Web Design</option>
-                <option value="SEO">SEO</option>
-                <option value="Marketing">Marketing</option>
-                <option value="Frontend">Frontend Dev</option>
+                <option value="Web Design">Smartphones marketing</option>
+                <option value="SEO">Clothing</option>
+                <option value="Marketing">Protein</option>
+                <option value="Frontend">Stock prices</option>
               </select>
             </div>
 
@@ -112,8 +112,8 @@ const ContactForm = () => {
             <h2 className="text-xl lg:text-2xl font-semibold text-left" style={{ fontFamily: 'Mona Sans, sans-serif' }}>Connect With Us</h2>
             <p className="text-left text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>Speak to our friendly team</p>
             <ul className="list-none p-0 text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>
-              <li>📧 E-mail us at <i>shikhu@marcaids.com</i></li>
-              <li className="lg:mb-8"><i>chirag@marcaids.com</i></li>
+              <li>📧 E-mail us at <i>divya0312@gmail.com</i></li>
+
               <li className="flex items-center">
                 Follow us on:
                 <a href="https://www.instagram.com/your_instagram" target="_blank" rel="noopener noreferrer" className="ml-2">
@@ -127,16 +127,16 @@ const ContactForm = () => {
 
             <h2 className="text-xl lg:text-2xl font-semibold mt-4 text-left" style={{ fontFamily: 'Mona Sans, sans-serif' }}>Call Us</h2>
             <p className="text-left text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>Call our team Mon-Fri from 9am-6pm</p>
-            <p className="text-left text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>📞+91 8580440313</p>
-            <p className="text-left text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>📞+91 8816062696</p>
+            <p className="text-left text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>📞+91 123456789</p>
+            <p className="text-left text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>📞+91 123456789</p>
 
             <h2 className="text-xl lg:text-2xl font-semibold mt-4 text-left" style={{ fontFamily: 'Mona Sans, sans-serif' }}>Services</h2>
             <ul className="list-none p-0 text-xl" style={{ fontFamily: 'Söhne, sans-serif' }}>
-              <li>Performance Marketing</li>
-              <li>Web Design & Development</li>
+              <li>Smartphones Marketing</li>
+              <li>Protein Marketing</li>
               <li>Branding</li>
-              <li>Social Media Management</li>
-              <li>Content Creation</li>
+              <li>Clothing</li>
+              <li>Stock Prices</li>
             </ul>
           </div>
         </div>

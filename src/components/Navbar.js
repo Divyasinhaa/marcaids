@@ -15,10 +15,7 @@ function Navbar() {
     <>
    
       <nav className="navbar">
-        {/* Logo */}
-        <Link to="/" className="navbar-logo">
-          <img src={logoo_main} alt="Logo" className="navbar-logo-img"/>
-        </Link>
+       
 
         {/* Search bar */}
         <div className="searchbarr">
@@ -41,7 +38,7 @@ function Navbar() {
           <li><NavLink to="/" onClick={toggleMenu}>HOME</NavLink></li>
           <li><NavLink to="/services" onClick={toggleMenu}>OUR SERVICES</NavLink></li>
           
-          <li><NavLink to="/testimonials" onClick={toggleMenu}>TESTIMONIALS</NavLink></li>
+          
           <li><NavLink to="/blog" onClick={toggleMenu}>BLOG</NavLink></li>
          
           <li><NavLink to="/contact" onClick={toggleMenu}>CONTACT</NavLink></li>

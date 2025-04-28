@@ -6,11 +6,17 @@ import aaboutus from "../../assets/aaboutus.jpeg";
 import Navbar from '../Navbar';
 import Footer from "../Footer/Footer";
 import "./AboutUs.css"
+import { Helmet } from 'react-helmet';
 
 function AboutUs() {
   return (
     <>
       <Navbar />
+      <Helmet>
+        <title>My Page Title</title>
+        <meta name="description" content="This is the description for my page." />
+        <meta name="keywords" content="React, SEO, Meta Tags" />
+      </Helmet>
 
       <section className="aboutUsIntro">
         <div className="container mx-auto lg:px-4 px-0">
@@ -22,7 +28,7 @@ function AboutUs() {
               <img src={aaboutus} className="w-full object-cover h-64 lg:h-auto mb-4 rounded-2xl" alt="About Us" />
               <h2 className="font-semibold text-2xl text-center lg:text-left mt-5">Why Us?</h2>
               <p className="text-justify mt-2 text-xl " style={{ fontFamily: 'Inika, serif' }}>
-              In today’s fast-paced world, standing out in digitals marketing is more than a challenge—it’s an art. At Marcaids, we don’t just see hurdles; we see opportunities for strategic brand development and growth. We’re not just another digital marketing agency; we’re the best digital marketing agency, and your creative co-pilot, ready to drive your brand toward success. With Marcaids, your business doesn’t just compete—it leads, influencing trends and setting new standards in brand management. Choosing Marcaids means partnering with a team that exceeds expectations, making every interaction unforgettable. We blend passion with purpose, ensuring each campaign is as dynamic as it is impactful. Ready to elevate your brand to new heights? The top Digital marketing agency in the USA, Marcaids will take your brand beyond the sky’s limit.
+              Our marketing platform was built with a clear vision: to bridge the gap between quality products and the right audience. Starting from humble beginnings, we have evolved into a dedicated space where technology, fashion, fitness, and finance meet innovation. In the world of smartphones, we bring the latest models and features directly to consumers through smart digital strategies. For clothing, we showcase brands with a perfect blend of style and individuality, connecting them to fashion-conscious buyers. In the protein and fitness industry, we highlight trustworthy supplements, ensuring fitness enthusiasts find exactly what they need. When it comes to stock prices and financial markets, we deliver reliable, up-to-date information to empower smarter investments.
               </p>
             </div>
           </div>
@@ -38,7 +44,7 @@ function AboutUs() {
             <div className="lg:w-1/2 lg:pl-10">
               <h2 className="font-semibold text-2xl mt-4 lg:mt-0">History of the Brand</h2>
               <p className="text-justify text-xl" style={{ fontFamily: 'Inika, serif' }}>
-              In an industry where creativity and innovation are essential, Marcaids was born to turn challenges into triumphs. We are more than a top digital marketing company in the USA—we are your growth partner, infusing every project with originality and cutting-edge strategies. From humble beginnings to becoming a path that lights the way for others, Marcaids has always led the charge, pushing boundaries and setting new standards in the market. Whether it’s social media marketing for interior designers, strategic brand management, or web development services, your brand doesn’t just keep up—it stands out. Choosing Marcaids is a commitment to excellence, creativity, and impactful change, ranking us among the top 5 digital marketing agencies in the USA.
+              Our marketing platform was built with a clear vision: to bridge the gap between quality products and the right audience. Starting from humble beginnings, we have evolved into a dedicated space where technology, fashion, fitness, and finance meet innovation. In the world of smartphones, we bring the latest models and features directly to consumers through smart digital strategies. For clothing, we showcase brands with a perfect blend of style and individuality, connecting them to fashion-conscious buyers. In the protein and fitness industry, we highlight trustworthy supplements, ensuring fitness enthusiasts find exactly what they need. When it comes to stock prices and financial markets, we deliver reliable, up-to-date information to empower smarter investments.
               </p>
             </div>
           </div>
@@ -50,7 +56,7 @@ function AboutUs() {
           <div className=" mb-6"> 
             <h2 className="font-semibold text-3xl text-[#442004]">OUR PROMISE</h2>
             <p className="mt-4 text-[16px] lg:text-xl  mx-2 text-[#4e3815]" style={{ fontFamily: 'Inika, serif' }}>
-            We make an impact by taking bold steps and trying new things. By pushing boundaries, we bring together cultures, ideas, people, and communities. We approach everything differently and leave a lasting impression. Marcaids stands for innovation, action, and results which it fulfills through its various services. The best digital marketing agency in the USA, Marcaids is about delivering what others can only dream of.
+            Our promise is simple — to provide accurate, engaging, and trustworthy marketing that not only builds brands but also earns customer loyalty. With a commitment to transparency, creativity, and performance, we aim to create lasting impressions in every industry we touch.
             </p>
           </div>
           {/* Full-Width Image */}
