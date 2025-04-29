@@ -3,7 +3,7 @@ import React from 'react';
 const PreviousClients = () => {
   const clients = [
     {
-      name: "Amit Verma",
+      name: "Amit",
       product: "VivoX79 Pro",
       feedback: "Fantastic service! The phone arrived quickly and exactly as described.",
       image: "/clients/amit.jpg",
