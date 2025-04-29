@@ -36,4 +36,4 @@ const PreviousClients1 = () => {
   );
 };
 
-export default PreviousClients;
+export default PreviousClients1;
