@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import OurServices from "./OurServices";
 import CarouselComponent from "./CarouselComponent";
 import Footer from "../Footer/Footer";
+import PreviousClients from './PreviousClients';
 import FAQ from "./FAQ";
 
 const ContactPage = () => {
@@ -23,6 +24,7 @@ const ContactPage = () => {
     <>
       <CarouselComponent />
       <OurServices />
+      <PreviousClients/>
       <FAQ />
       <div className="bg-[#DACBC1] p-4 sm:p-6 md:p-10">
   {/* Top Links */}
