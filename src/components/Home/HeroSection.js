@@ -20,7 +20,7 @@ const HeroSection = () => {
                     }}
                     className="text-black"
                   >
-                    Building
+                    SkillBridge
                   </h1>
                 </div>
                 <div className="col-md-4 text-white ml-10">
@@ -31,7 +31,7 @@ const HeroSection = () => {
                       textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)"
                     }}
                   >
-                    Let's build your identity and your brand
+                    Let's build your identity and the Alumni
                   </p>
                 </div>
               </div>
@@ -58,7 +58,7 @@ const HeroSection = () => {
                       textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)"
                     }}
                   >
-                    Business
+                    Alumni
                   </h1>
                 </div>
               </div>
