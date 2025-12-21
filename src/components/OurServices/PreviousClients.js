@@ -7,16 +7,16 @@ const PreviousClients = () => {
   const clients = [
     {
       name: "Amit Sharma",
-      product: "Vivo X79 Pro",
+      role: "Frontend Learner",
       feedback:
-        "Fantastic service! The phone arrived quickly and exactly as described.",
+        "SkillBridge helped me connect with peers who guided me through real-world projects. Learning felt practical and collaborative.",
       image: smart,
     },
     {
       name: "Neha Verma",
-      product: "Vivo Y21e",
+      role: "Mentorship Program Mentee",
       feedback:
-        "Smooth buying experience. I really appreciated the timely support.",
+        "The micro-mentorship sessions were extremely helpful. I gained clarity, confidence, and industry insights.",
       image: smart1,
     },
   ];
@@ -24,10 +24,10 @@ const PreviousClients = () => {
   return (
     <section className="bg-white py-10 px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-2">Our Smartphone Clients</h2>
+        <h2 className="text-3xl font-bold mb-2">Our Learners & Alumni</h2>
         <p className="text-gray-600 mb-8">
-          A few of the valued customers who trusted us with their smartphone
-          purchases.
+          Hear from students and professionals who grew through SkillBridge’s
+          peer-to-peer learning and mentorship.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -44,7 +44,7 @@ const PreviousClients = () => {
 
               <h3 className="text-xl font-semibold">{client.name}</h3>
               <p className="text-sm text-gray-500 mb-2">
-                Bought: {client.product}
+                Role: {client.role}
               </p>
               <p className="italic text-gray-700 mt-2">
                 “{client.feedback}”
