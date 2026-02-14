@@ -24,6 +24,7 @@ function Navbar() {
   };
 
   return (
+<<<<<<< HEAD
     <nav className={`modern-navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         
@@ -44,6 +45,38 @@ function Navbar() {
               Get Started
             </Link>
           </li>
+=======
+    <>
+   
+      <nav className="navbar">
+       
+
+        {/* Search bar */}
+        <div className="searchbarr">
+          <input 
+            type="text" 
+            placeholder="Search" 
+            className="search-input"
+          />
+        </div>
+
+        {/* Hamburger icon */}
+        <div className="menu-icon" onClick={toggleMenu}>
+          <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+          <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+          <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
+        </div>
+
+        {/* Navigation Links */}
+        <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
+          <li><NavLink to="/" onClick={toggleMenu}>HOME</NavLink></li>
+          <li><NavLink to="/services" onClick={toggleMenu}>OUR SERVICES</NavLink></li>
+          
+          
+          <li><NavLink to="/blog" onClick={toggleMenu}>BLOG</NavLink></li>
+         
+          <li><NavLink to="/contact" onClick={toggleMenu}>CONTACT</NavLink></li>
+>>>>>>> 4ceddef6cbb68c23c286d4b8d72847cb75216085
         </ul>
 
         {/* Mobile Menu Toggle */}

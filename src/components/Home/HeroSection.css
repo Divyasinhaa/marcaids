@@ -36,6 +36,7 @@
 
 /* Hero Section Base */
 .HS {
+<<<<<<< HEAD
   margin: 0;
   height: 100vh;
   width: 100%;
@@ -51,6 +52,69 @@
   padding: 20px;
   overflow: hidden;
 }
+=======
+  
+    margin:0;
+    height:100vh;               
+    width: 100%; 
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    
+    background-image:url(bg-home.jpeg);
+    /* cursor: pointer;
+    overflow: hidden; */
+  }
+  
+  /* Styling for the content within the hero section */
+  .hero-content .container {
+    
+    background: transparent !important;
+  }
+  
+  .hero-content .row {
+    
+    background: transparent !important;
+  }
+  /* .hero-content h1,
+  .hero-content h2,
+  .hero-content p {
+    font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" !important;
+    color: white !important;
+    text-align: end !important;
+  } */
+  
+  .hero-content h1 {
+    top:50%;
+    font-size: 10rem !important;
+    
+    color: black !important;
+    text-align: end !important;
+  }
+  
+  .hero-content h2 {
+    font-size: 6rem !important;
+    
+    color: white !important;
+    text-align: end !important;
+    font-style: normal !important;
+    text-decoration: none !important;
+    padding-top:25px ;
+  }
+  
+  .hero-content p {
+    padding-top: 30px;
+    
+    font-size: 3rem !important;
+    text-align: start !important;
+  }
+>>>>>>> 4ceddef6cbb68c23c286d4b8d72847cb75216085
 
 /* Animated Background Blobs */
 @keyframes blob {
@@ -172,8 +236,43 @@
   }
 }
 
+<<<<<<< HEAD
 .animate-slide-up {
   animation: slide-up 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+=======
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 5rem !important;
+    
+  }
+
+  .hero-content h2 {
+    font-size: 4rem !important;
+    
+  }
+
+  .hero-content p {
+    font-size: 4rem !important;
+    
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    /* gap: 10px; */
+  }
+}
+.HS.open {
+  
+  top:50%;
+  right:42%;
+  /* position:absolute; */
+  transform: rotate(60deg) scale(0.5);
+  transition: transform 0.5s ease;
+  /* height: 300px ;*/
+  width: 100% ; 
+  
+  margin-left: 20%;
+>>>>>>> 4ceddef6cbb68c23c286d4b8d72847cb75216085
 }
 
 .animate-fade-in {

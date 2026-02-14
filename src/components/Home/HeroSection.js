@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
+=======
+import React from "react";
+>>>>>>> 4ceddef6cbb68c23c286d4b8d72847cb75216085
 import Navbar from "../Navbar";
-import ConcentricCircle from "./ConcentricCircle";
 import "./HeroSection.css";
 
 const HeroSection = () => {
+<<<<<<< HEAD
   const [animationPhase, setAnimationPhase] = useState("initial");
   
   useEffect(() => {
@@ -76,11 +80,43 @@ const HeroSection = () => {
                       Transforming visions into extraordinary digital experiences through innovation and creative excellence
                     </p>
                   </div>
+=======
+  return (
+    <div className="App">
+      <div className="HS">
+        <Navbar />
+        <div className="hero-content">
+          <div className="hero-sec">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-7 k">
+                  <h1 
+                    style={{
+                      fontFamily: "'IM Fell Great Primer', serif",
+                      fontWeight: 100,
+                      textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)"
+                    }}
+                    className="text-black"
+                  >
+                    SkillBridge
+                  </h1>
+                </div>
+                <div className="col-md-4 text-white ml-10">
+                  <p 
+                    style={{
+                      fontFamily: "'IM Fell Great Primer', serif",
+                      fontWeight: 100,
+                      textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)"
+                    }}
+                  >
+                    Let's build your identity and the Alumni
+                  </p>
+>>>>>>> 4ceddef6cbb68c23c286d4b8d72847cb75216085
                 </div>
               </div>
             </div>
-          </div>
 
+<<<<<<< HEAD
           {/* Animated Text Layer */}
           {isTextVisible && (
             <div
@@ -116,15 +152,47 @@ const HeroSection = () => {
                   <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
                     Click to explore our world
                   </p>
+=======
+            <div className="container text-black mt-4">
+              <div className="row">
+                <div className="col-md-5">
+                  <h2 
+                    style={{
+                      fontFamily: "'IM Fell Great Primer', serif",
+                      fontWeight: 100,
+                      textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)"
+                    }}
+                  >
+                    your
+                  </h2>
+                </div>
+                <div className="col-md-5">
+                  <h1 
+                    style={{
+                      fontFamily: "'IM Fell Great Primer', serif",
+                      fontWeight: 100,
+                      textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)"
+                    }}
+                  >
+                    Alumni
+                  </h1>
+>>>>>>> 4ceddef6cbb68c23c286d4b8d72847cb75216085
                 </div>
               </div>
             </div>
-          )}
-        </div>
-      )}
 
+<<<<<<< HEAD
       {isCircleVisible && <ConcentricCircle onClick={handleCircleClick} />}
     </>
+=======
+            {/* Static Text Layer */}
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+>>>>>>> 4ceddef6cbb68c23c286d4b8d72847cb75216085
   );
 };
 
