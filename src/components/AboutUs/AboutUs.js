@@ -6,56 +6,116 @@ import aaboutus from "../../assets/aaboutus.jpeg";
 import Navbar from '../Navbar';
 import Footer from "../Footer/Footer";
 import "./AboutUs.css"
+import { Helmet } from 'react-helmet';
 
 function AboutUs() {
   return (
     <>
       <Navbar />
+      <Helmet>
+        <title>About Us - Nexus Studio</title>
+        <meta name="description" content="Learn about our journey, mission, and commitment to digital excellence." />
+        <meta name="keywords" content="Digital Agency, Web Design, Branding, Marketing" />
+      </Helmet>
 
-      <section className="aboutUsIntro">
-        <div className="container mx-auto lg:px-4 px-0">
-          <div className="flex flex-col lg:flex-row">
-            <div className="lg:w-1/3 bg-white flex items-center justify-center py-8 lg:py-0">
-              <h1 className="text-center text-black font-medium text-3xl lg:text-5xl lg:mb-80">ABOUT US</h1>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Text Content */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400">
+                  About
+                </span>
+                <br />
+                <span className="text-white">Our Story</span>
+              </h1>
+              <div className="h-1 w-32 bg-gradient-to-r from-purple-500 to-pink-500 mb-8 mx-auto lg:mx-0"></div>
             </div>
-            <div className="lg:w-2/3 bg-white flex flex-col items-center lg:items-start p-6 lg:p-12">
-              <img src={aaboutus} className="w-full object-cover h-64 lg:h-auto mb-4 rounded-2xl" alt="About Us" />
-              <h2 className="font-semibold text-2xl text-center lg:text-left mt-5">Why Us?</h2>
-              <p className="text-justify mt-2 text-xl " style={{ fontFamily: 'Inika, serif' }}>
-              In today’s fast-paced world, standing out in digitals marketing is more than a challenge—it’s an art. At Marcaids, we don’t just see hurdles; we see opportunities for strategic brand development and growth. We’re not just another digital marketing agency; we’re the best digital marketing agency, and your creative co-pilot, ready to drive your brand toward success. With Marcaids, your business doesn’t just compete—it leads, influencing trends and setting new standards in brand management. Choosing Marcaids means partnering with a team that exceeds expectations, making every interaction unforgettable. We blend passion with purpose, ensuring each campaign is as dynamic as it is impactful. Ready to elevate your brand to new heights? The top Digital marketing agency in the USA, Marcaids will take your brand beyond the sky’s limit.
-              </p>
+
+            {/* Image */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 rounded-3xl blur-2xl opacity-20"></div>
+              <img 
+                src={aaboutus} 
+                className="relative w-full h-96 object-cover rounded-3xl shadow-2xl ring-4 ring-white/10" 
+                alt="About Us" 
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="whyUsIntro">
-        <div className="container mx-auto px-4 mt-8">
-          <div className="flex flex-col lg:flex-row lg:items-center">
-            <div className="lg:w-1/2 flex justify-center lg:justify-start mb-4 lg:mb-0">
-              <img src={aboutus2} alt="Brand History" className="lg:h-[480px] w-full rounded-2xl" />
-            </div>
-            <div className="lg:w-1/2 lg:pl-10">
-              <h2 className="font-semibold text-2xl mt-4 lg:mt-0">History of the Brand</h2>
-              <p className="text-justify text-xl" style={{ fontFamily: 'Inika, serif' }}>
-              In an industry where creativity and innovation are essential, Marcaids was born to turn challenges into triumphs. We are more than a top digital marketing company in the USA—we are your growth partner, infusing every project with originality and cutting-edge strategies. From humble beginnings to becoming a path that lights the way for others, Marcaids has always led the charge, pushing boundaries and setting new standards in the market. Whether it’s social media marketing for interior designers, strategic brand management, or web development services, your brand doesn’t just keep up—it stands out. Choosing Marcaids is a commitment to excellence, creativity, and impactful change, ranking us among the top 5 digital marketing agencies in the USA.
-              </p>
-            </div>
+      {/* Why Us Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Why Choose Us?</h2>
+            <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto"></div>
           </div>
-        </div>
-      </section>
-
-      <section className="ourPromise mt-8 lg:mt-0">
-        <div className="container-fluid text-center px-0 ">
-          <div className=" mb-6"> 
-            <h2 className="font-semibold text-3xl text-[#442004]">OUR PROMISE</h2>
-            <p className="mt-4 text-[16px] lg:text-xl  mx-2 text-[#4e3815]" style={{ fontFamily: 'Inika, serif' }}>
-            We make an impact by taking bold steps and trying new things. By pushing boundaries, we bring together cultures, ideas, people, and communities. We approach everything differently and leave a lasting impression. Marcaids stands for innovation, action, and results which it fulfills through its various services. The best digital marketing agency in the USA, Marcaids is about delivering what others can only dream of.
+          
+          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 md:p-12 shadow-xl">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              In today's fast-paced digital landscape, standing out requires more than just presence—it demands excellence. We don't see challenges; we see opportunities for innovation and growth. As your strategic partner, we combine creativity with data-driven insights to craft experiences that resonate and convert. Our approach blends passion with precision, ensuring every campaign delivers measurable impact. We're not just building brands; we're creating movements that influence trends and set new industry standards. Ready to transform your digital presence? Let's elevate your brand together.
             </p>
           </div>
-          {/* Full-Width Image */}
-          <div className="w-full">
-            <img src={aboutus3} alt="Our Promise" className="w-full object-cover sm:h-100 lg:h-[800px] " />
+        </div>
+      </section>
+
+      {/* History Section */}
+      <section className="bg-gradient-to-b from-white to-gray-50 py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Image */}
+            <div className="order-2 lg:order-1">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 rounded-3xl blur-2xl opacity-20"></div>
+                <img 
+                  src={aboutus2} 
+                  alt="Brand History" 
+                  className="relative w-full h-96 object-cover rounded-3xl shadow-2xl ring-4 ring-white/10" 
+                />
+              </div>
+            </div>
+
+            {/* Text Content */}
+            <div className="order-1 lg:order-2">
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Our Journey</h2>
+              <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-pink-500 mb-8"></div>
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                Born from a vision to transform digital challenges into opportunities, we've grown from humble beginnings into a force of innovation. We're more than a digital agency—we're your growth catalyst, infusing every project with creativity and cutting-edge strategy. From social media mastery to comprehensive brand development and web solutions, we don't just help brands keep up; we help them stand out. Choosing us means committing to excellence, creativity, and transformative results that push boundaries and redefine what's possible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Promise Section */}
+      <section className="relative bg-slate-900 py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
+              Our Promise
+            </h2>
+            <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mb-8"></div>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              We create impact through bold innovation and fearless experimentation. By pushing boundaries, we unite cultures, ideas, people, and communities. We approach everything differently, leaving lasting impressions that matter. Our commitment is to innovation, action, and results—delivering what others only dream of.
+            </p>
+          </div>
+        </div>
+
+        {/* Full-Width Image */}
+        <div className="w-full mt-12">
+          <div className="relative h-96 md:h-[600px] overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10"></div>
+            <img 
+              src={aboutus3} 
+              alt="Our Promise" 
+              className="w-full h-full object-cover" 
+            />
           </div>
         </div>
       </section>

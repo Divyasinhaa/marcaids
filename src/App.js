@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import {BrowserRouter, Routes,Route} from "react-router-dom";
+import {BrowserRouter, Routes,Route , Router} from "react-router-dom";
 import Home from "./components/Home/Home.js";
 import AboutUs from "./components/AboutUs/AboutUs.js";
 import ContactPage from "./components/OurServices/ContactPage.js";
@@ -10,13 +10,13 @@ import TermsNCond from "./components/tnc/tnc.js";
 import Blogpage from "./components/Blog/Gallery.js"
 
 
-
 function App() {
   return (
     <>
      {/* <BrowserRouter> */}
      
-     <Routes>
+      
+      <Routes>
      <Route path="/" element={<Home/>}/>
      
      <Route path="/about" element={<AboutUs/>}/>
@@ -26,6 +26,8 @@ function App() {
       <Route path="/contact" element={<ContactUs/>}/>
       <Route path="/tnc" element={<TermsNCond/>}/>
      </Routes>
+    
+     
      {/* </BrowserRouter> */}
      </>
   );

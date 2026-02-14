@@ -1,19 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
 
+/* Blob animation */
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(20px, -50px) scale(1.1);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  75% {
+    transform: translate(50px, 50px) scale(1.05);
+  }
+}
 
-@media (max-width: 768px) {
-    .testimonial-cards {
-      padding: 1rem; /* Adjust padding for mobile */
-    }
-    .testimonial-quote {
-      font-size: 1.5rem; /* Adjust font size for better readability */
-    }
-    .client-name {
-      font-size: 1.5rem; /* Adjust client name size */
-    }
-    .client-title {
-      font-size: 1rem; /* Adjust title size */
-    }
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Modern Carousel Styles */
+.modern-testimonial-carousel .carousel-indicators {
+  bottom: -50px;
+}
+
+.modern-testimonial-carousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(147, 51, 234, 0.3);
+  border: 2px solid rgba(147, 51, 234, 0.5);
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.modern-testimonial-carousel .carousel-indicators button.active {
+  background: linear-gradient(to right, #9333ea, #ec4899);
+  border-color: #ec4899;
+  transform: scale(1.2);
+}
+
+.modern-testimonial-carousel .carousel-control-prev,
+.modern-testimonial-carousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(147, 51, 234, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.modern-testimonial-carousel .carousel-control-prev:hover,
+.modern-testimonial-carousel .carousel-control-next:hover {
+  opacity: 1;
+  background: rgba(147, 51, 234, 0.4);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.modern-testimonial-carousel .carousel-control-prev {
+  left: -60px;
+}
+
+.modern-testimonial-carousel .carousel-control-next {
+  right: -60px;
+}
+
+.modern-testimonial-carousel .carousel-control-prev-icon,
+.modern-testimonial-carousel .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .modern-testimonial-carousel .carousel-control-prev {
+    left: 10px;
   }
   
+  .modern-testimonial-carousel .carousel-control-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modern-testimonial-carousel .carousel-control-prev,
+  .modern-testimonial-carousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .modern-testimonial-carousel .carousel-indicators {
+    bottom: -40px;
+  }
+}
+
+/* Card animations */
+.modern-testimonial-carousel .carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Smooth fade transitions */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: 0.6s;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+}
+
+/* Scroll indicator bounce */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}

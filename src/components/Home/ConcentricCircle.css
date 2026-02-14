@@ -1,88 +1,313 @@
+/* Container */
 .concentric-circle-container {
   position: relative;
-  width: 100%; /* Full width of the viewport */
-  height: 100vh; /* Full height of the viewport */
-  margin: 0; /* Remove any margins */
-  background-color: #c8c4b9 !important;
-  overflow: hidden; /* Prevent overflow from larger SVGs */
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Blob animations */
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(20px, -50px) scale(1.1);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  75% {
+    transform: translate(50px, 50px) scale(1.05);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Circle wrapper */
+.circle-wrapper {
+  position: relative;
+  width: 90vmin;
+  height: 90vmin;
+  max-width: 800px;
+  max-height: 800px;
+}
+
+/* Center circle and image */
 .circle {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.center-image {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.center-image:hover {
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .center-image img {
-  width: 10vw; /* Responsive size */
-  height: 10vw; /* Responsive size */
+  width: 12vmin;
+  height: 12vmin;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(167, 139, 250, 0.5);
+  box-shadow: 0 0 40px rgba(147, 51, 234, 0.6);
+  position: relative;
+  z-index: 2;
 }
 
-/* Adjust SVG properties */
+/* Glow effect behind image */
+.image-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14vmin;
+  height: 14vmin;
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 220px;
+  max-height: 220px;
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.4) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+/* SVG container */
 .circle-svg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: visible;
 }
 
+/* Text styling */
 .circle-text {
-  transform-origin: center center; /* Rotates around the center */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
+/* Inner circle text */
 .inner-text {
-  fill: #4f3c31; /* Change color to brown */
-  font-size: 0.2rem; /* Font size set to 2.5rem */
-  animation: rotate-inner 10s linear infinite; /* Rotate animation */
-  word-spacing: 0.2px;
+  fill: #a78bfa;
+  font-size: 1.2vmin;
+  animation: rotate-clockwise 15s linear infinite;
 }
 
+/* Middle circle text */
 .middle-text {
-  fill: #4f3c31; /* Default color */
-  font-size: 1.0vw; /* Medium text size */
-  animation: rotate-inner 14s linear infinite; /* Rotate animation */
-  word-spacing: 0.2px;
+  fill: #ec4899;
+  font-size: 1.4vmin;
+  animation: rotate-clockwise 20s linear infinite;
 }
 
+/* Outer circle text */
 .outer-text {
-  fill: #88766c; /* Default color */
-  font-size: 1.5vw; /* Larger text size */
-  animation: rotate-inner 20s linear infinite; /* Rotate animation */
-  /* word-spacing: 0.2px; */
+  fill: #60a5fa;
+  font-size: 1.6vmin;
+  animation: rotate-clockwise 25s linear infinite;
 }
 
-/* Keyframes for counterclockwise rotation */
-@keyframes rotate-inner {
+/* Rotation animations */
+@keyframes rotate-clockwise {
   0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg); /* Counterclockwise rotation */
+    transform: rotate(360deg);
+  }
+}
+
+/* CTA text */
+.cta-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .circle-wrapper {
+    width: 85vmin;
+    height: 85vmin;
+  }
+
+  .inner-text {
+    font-size: 1.4vmin;
+  }
+
+  .middle-text {
+    font-size: 1.6vmin;
+  }
+
+  .outer-text {
+    font-size: 1.8vmin;
+  }
+}
+
+@media (max-width: 768px) {
+  .circle-wrapper {
+    width: 90vmin;
+    height: 90vmin;
+  }
+
+  .center-image img {
+    width: 15vmin;
+    height: 15vmin;
+    min-width: 120px;
+    min-height: 120px;
+  }
+
+  .image-glow {
+    width: 17vmin;
+    height: 17vmin;
+    min-width: 140px;
+    min-height: 140px;
+  }
+
+  .inner-text {
+    font-size: 1.8vmin;
+  }
+
+  .middle-text {
+    font-size: 2vmin;
+  }
+
+  .outer-text {
+    font-size: 2.2vmin;
   }
 }
 
 @media (max-width: 480px) {
-  .outer-text{
-    fill: #88766c; /* Default color */
-  font-size: 4vw; /* Larger text size */
-  animation: rotate-inner 20s linear infinite; /* Rotate animation */
-  /* word-spacing: 0.2px; */
+  .circle-wrapper {
+    width: 95vmin;
+    height: 95vmin;
   }
 
-.inner-text {
-  fill: #4f3c31; /* Change color to brown */
-  font-size: 0.5rem; /* Font size set to 2.5rem */
-  animation: rotate-inner 10s linear infinite; /* Rotate animation */
-  word-spacing: 0.2px;
+  .center-image img {
+    width: 18vmin;
+    height: 18vmin;
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .image-glow {
+    width: 20vmin;
+    height: 20vmin;
+    min-width: 120px;
+    min-height: 120px;
+  }
+
+  .inner-text {
+    font-size: 2vmin;
+  }
+
+  .middle-text {
+    font-size: 2.4vmin;
+  }
+
+  .outer-text {
+    font-size: 2.8vmin;
+  }
+
+  .cta-text p {
+    font-size: 1rem;
+  }
 }
 
-.middle-text {
-  fill: #4f3c31; /* Default color */
-  font-size: 1.8vw; /* Medium text size */
-  animation: rotate-inner 14s linear infinite; /* Rotate animation */
-  word-spacing: 0.2px;
+/* Utility classes */
+.absolute {
+  position: absolute;
 }
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
